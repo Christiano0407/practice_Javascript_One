@@ -12,6 +12,15 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 - [MDN](https://developer.mozilla.org/es/)
 
+## TEST Javascript
+
+> ¿Qué es una variable y para qué sirve?
+
+- ¿Qué es una variable y para qué sirve?
+  Representación de un valor gurdado en memoria. Podemos usar paralabras reservadas en Javascript (Var, Let, Const).
+  Podemos declarar e inicializar una variable (palabras reservadas), y así, le decimos al navegador e javascript que guarde un espacio para ella en memoria.
+  A partir de ECMAScript 6 (ES6), nacen: Let y Const (Scope). Dependiendo del Scope, es su accesibilidad.
+
 ## MIT LICENSE
 
 MIT License
