@@ -73,6 +73,52 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 - Funciones
 
+> ¿Qué es una función?
+
+- ¿Qué es una función?
+Un conjunto de sentencias que llevan acabo acciones.Utilizamos los valores o parámetros ejecutados en las variables.
+
+Tenemos dos tipos de funciones: 1) Declarativa y 2) Expresión o Anónimas.
+
+1) Declarativa:
+  function myFunction() {
+    return 3;
+  }
+
+2) Expresión:
+const myFunction = function() {
+  return a + b
+}
+return = Retorna a un valor.
+return y Function => Son Palabras reservadas.
+
+- ¿Cuándo me sirve usar una función en mi código?
+Para ejecutar pasos o cálculos para poder validar un resultado.
+
+- ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+Las Funciones necesitan Parámetros: Los parámetros son los valores que esperamos (variables declaradas y solicitadas en la función), para poder ejecutar algo.
+
+function myFunction(num1, num2) {
+   let result =  num1 + num2;
+   return result;
+}
+myFunction(5, 10);
+num1 y num2 = parámetros;
+resultado Final => 15;
+
+Argumentos: Las Funciones nos piden declarar nuestras variables que son nuestros argumentos.
+
+> Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+const completeName = name + lastName;
+function person(name, lastname, nickname) {
+ retun console.log(`Soy ${name} me apellido ${lastname} pero completo es ${completeName} pero, prefiero: ${nickname}`);
+}
+person("Juan David", "Castro Gallego", "Juandc");
+
+> CONDICIONALES
+
+- Condicionales
+
 ## MIT LICENSE
 
 MIT License
