@@ -18,9 +18,29 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 - ¿Qué es una variable y para qué sirve?
 
-  Representación de un valor gurdado en memoria. Podemos usar paralabras reservadas en Javascript (Var, Let y Const).
+  Representación de un valor gurdado e designado en memoria. Usamos paralabras reservadas en Javascript (Var, Let y Const).
   Podemos declarar e inicializar una variable (palabras reservadas), y así, le decimos al navegador e javascript que guarde un espacio para ella en memoria.
   A partir de ECMAScript 6 (ES6), nacen: Let y Const (Scope). Dependiendo del Scope, es su accesibilidad.
+
+> ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+- ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+   Al declarar una Variable, le decimos al navegador, y Javascript, que guarde un espacio en memoria (variable). Al ser declarada, le otorgamos un valor, un tipo de dato o la información que va a almacenar.
+
+> ¿Cuál es la diferencia entre sumar números y concatenar strings?
+
+- ¿Cuál es la diferencia entre sumar números y concatenar strings?
+
+  Concatenar "Strings", es unir elementos, sumar dos elementos o información ( cadena de texto). Sumar números, es realizar la suma entre dos elementos (operación matemática).
+  Tipos de datos (Numbers).
+  String (Cadena de texto).
+
+> ¿Cuál operador me permite sumar o concatenar?
+
+- ¿Cuál operador me permite sumar o concatenar?
+
+  El operador es: "+". Después, en un nivel más avanzado podemos utilizar "$", para concatenar.
 
 ## MIT LICENSE
 
