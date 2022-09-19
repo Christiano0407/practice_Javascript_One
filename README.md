@@ -66,6 +66,13 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 > Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
+- let nameComplete = name + lastName;
+- let realMoney = saveMoney - debtMoney;
+
+> Funciones Javascript
+
+- Funciones
+
 ## MIT LICENSE
 
 MIT License
