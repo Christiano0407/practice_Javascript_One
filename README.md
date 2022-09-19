@@ -42,6 +42,30 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
   El operador es: "+". Después, en un nivel más avanzado podemos utilizar "$", para concatenar.
 
+> (2) Determina el nombre y tipo de dato para almacenar en variables la siguiente información:
+
+- Nombre: "String"
+- Apellido: "String"
+- Nombre de Usuario de Platzi: "String"
+- Edad: "Number"
+- Correo Electrónico: "String"
+- Mayor de Edad: "Number"
+- Dinero Ahorrado: "Number"
+- Deudas; "Number".
+
+> (3) Traduce a código JavaScript las variables del ejemplo anterior.
+
+- const name = "Chris";
+- const lastName = "Velázquez";
+- let userNamePlatzi = "Chris Velázquez";
+- let age = 25;
+- let email = "placebo@gmail";
+- let Adult = 35;
+- let saveMoney = 10000;
+- let debtMoney = 10000;
+
+> Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
+
 ## MIT LICENSE
 
 MIT License
