@@ -1,0 +1,54 @@
+/* === Import === */
+
+/* === Root Design System === */
+:root {
+    --clr-white: #fff;
+    --clr-black: #000;
+    --bg-color: #8AA6A3;
+    --clr-mokepon-logo: #D90416;
+    --clr-mokepon-bg: #079DD9;
+    --clr-mokepon-bg2: #41BDD9;
+    --clr-two-section: #00E3CC;
+    --clr-principal: #C6D93B;
+    --clr-secondary: #6DBF1B;
+    /* === Margin */
+    --margin: 2rem auto;
+}
+
+/* === General === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+span {
+    letter-spacing: 0.1rem;
+}
