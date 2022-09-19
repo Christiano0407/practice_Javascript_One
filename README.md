@@ -109,15 +109,55 @@ resultado Final => 15;
 Argumentos: Las Funciones nos piden declarar nuestras variables que son nuestros argumentos.
 
 > Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
+
 const completeName = name + lastName;
+
 function person(name, lastname, nickname) {
  retun console.log(`Soy ${name} me apellido ${lastname} pero completo es ${completeName} pero, prefiero: ${nickname}`);
 }
+
 person("Juan David", "Castro Gallego", "Juandc");
 
 > CONDICIONALES
 
 - Condicionales
+- ¿Qué es un condicional?
+
+  Son reglas que nos permiten ejecutar e validar ciertas reglas o acciones (cierto o falso / True or False).
+  if(true) {
+    console.log("Hola");
+  }
+  resultado => Hola.
+- ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+  Tenemos:
+  - if.else / Switch
+  - condition ? true : false;
+  ( || => O / && => Y / !-- => no es Igual / === Estrictamente Igual / >= / <= / length )
+
+- ¿Puedo combinar funciones y condicionales?
+- Sí. Puedes ejecutar condicionales dentro de una función.
+
+> Replica el comportamiento del siguiente código que usa la sentencia switch utilizando if, else y else if:
+
+## Javascript
+
+const suscription = "basic";
+
+function studentSuscription() {
+  if(suscription === "free") {
+    console.log("Solo puedes tomar los cursos gratis");
+  } else if(suscription === "basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+  } else if (suscription === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+  } else if(suscription === "Expert Plus") {
+     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+  } else {
+    console.log(error);
+  }
+};
+studentSuscription();
 
 ## MIT LICENSE
 
