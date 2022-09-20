@@ -369,6 +369,10 @@ informationPeople(people);
 
 ```
 
+## GitHub Respuestas
+
+- [Platzi_Test](https://github.com/platzi/curso-js-practico/tree/variables);
+
 ## MIT LICENSE
 
 MIT License
