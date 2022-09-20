@@ -30,7 +30,7 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 - ¿Cuál es la diferencia entre declarar e inicializar una variable?
 
-   Al declarar una Variable, le decimos al navegador, y Javascript, que guarde un espacio en memoria (variable). Al ser declarada, le otorgamos un valor, un tipo de dato o la información que va a almacenar.
+   Al declarar una Variable, le decimos al navegador y Javascript, que guarde un espacio en memoria (variable). Al ser declarada, le otorgamos un valor, un tipo de dato o la información que va a almacenar.
 
 > ¿Cuál es la diferencia entre sumar números y concatenar strings?
 
