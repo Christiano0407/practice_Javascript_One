@@ -70,6 +70,8 @@ Course Javascript Practice. Challenges Vanilla Javascript.
  let debtMoney = 10000;
 ```
 
+![](https://pbs.twimg.com/media/EeVw-DOXgAAMtKk.jpg);
+
 > Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 ```javascript
