@@ -153,6 +153,7 @@ function person(name, lastname, nickname) {
 }
 
 person("Juan David", "Castro Gallego", "Juandc");
+console.log(person);
 ```
 
 > CONDICIONALES
