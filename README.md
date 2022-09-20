@@ -62,7 +62,7 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 ```javascript
  const name = "Chris";
  const lastName = "Velázquez";
- let userNamePlatzi = "Chris Velázquez";
+ let userNamePlatzi = "@ChrisVelázquez";
  let age = 25;
  let email = "placebo@gmail";
  let Adult = 35;
