@@ -118,7 +118,10 @@ Para ejecutar pasos o cálculos para poder validar un resultado.
 Las Funciones necesitan Parámetros: Los parámetros son los valores que esperamos (variables declaradas y solicitadas en la función), para poder ejecutar algo.
 
 > Image Parameters and Arguments
+
 ![](https://preview.redd.it/bxkz9iko0u681.png?auto=webp&s=dfcf8222d495f9c71bc5b5fb17468b33e7cba0e9)
+
+![](https://sites.google.com/site/algebraghc/_/rsrc/1444241231557/primer-parcial/importancia-de-los-signos-de-agrupacion/signos%20de%20agrupaci%C3%B3n.png?height=154&width=200)
 
 ```javascript
 function myFunction(num1, num2) {
