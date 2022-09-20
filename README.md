@@ -297,10 +297,75 @@ console.log(array[0]);
 
   team.nuevoJugador();
 
+  // === This => Hace referencia al Objeto (team) ===
+
+```
+
+> Objects: Función constructora (parámetros y propiedades)
+> Función Constructora => Class (POO: Programación Orientada a Objetos)
+
+```javascript
+ function auto(marca, modelo, annio) {
+   this.marca = marca;
+   this.modelo = modelo;
+   this.annio = annio;
+ }
+// === Constructor
+const nuevoAuto = new auto("Tesla", "Modelo 3", 2020);
+console.log(nuevoAuto);
+
 ```
 
 - ¿Cuándo es mejor usar objetos o arrays?
+
+  Utilizamos Objetos en el momento que el conjunto de elementos es grande; Además, tiene distintos valores.
+
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+  Sí.
+
+> Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+```javascript
+const videoGames = (games) => {
+  console.log(games[0]);
+}
+
+videoGames(["Fifa", "Madden", "Crash", "Mario"]);
+```
+
+> Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+
+```javascript
+function getArray(array) {
+  for(let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+  }
+}
+
+getArray(["User", "UserTwo", "UserThree"]);
+console.log(getArray);
+
+```
+
+> Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+```javascript
+const people = {
+  name: "Pammela",
+  age: 30,
+  lastName: "Velázquez"
+}
+
+function informationPeople(information) {
+ for(let key in information) {
+  console.log(information[key]); 
+ }
+}
+
+informationPeople(people);
+
+```
 
 ## MIT LICENSE
 
