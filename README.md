@@ -161,7 +161,7 @@ console.log(person);
 - Condicionales
 - ¿Qué es un condicional?
 
-  Son reglas que nos permiten ejecutar e validar ciertas reglas o acciones (cierto o falso / True or False).
+  Son reglas que nos permiten ejecutar un bloque de código e validar ciertas reglas o acciones (cierto o falso / True or False).
 
 ```javascript
   if(true) {
