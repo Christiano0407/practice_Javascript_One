@@ -112,10 +112,17 @@ return = Retorna a un valor.
 return y Function => Son Palabras reservadas.
 
 - ¿Cuándo me sirve usar una función en mi código?
-Para ejecutar pasos o cálculos para poder validar un resultado.
+
+Para ejecutar pasos o cálculos para  validar un resultado. También, nos sirve cuando tenemos variables u bloques de código muy parecidos
+(con cambios en parámetros y argumentos).
+
+Para ordenar y mejorar la legibilidad de nuestro código.
 
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
 Las Funciones necesitan Parámetros: Los parámetros son los valores que esperamos (variables declaradas y solicitadas en la función), para poder ejecutar algo.
+
+Las Funciones reciben Parámetros cuando las ejecutamos.Envíamos Argumentos cuando la ejecutamos.
 
 > Image Parameters and Arguments
 
