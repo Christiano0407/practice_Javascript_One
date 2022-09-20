@@ -11,6 +11,10 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 > MDN Mozilla Developer
 
 - [MDN](https://developer.mozilla.org/es/)
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/)
+- [Javascript_Info](https://javascript.info/)
+- [30_second_of_code](https://www.30secondsofcode.org/js/p/1)
+- [Platzi_Javascript_Hero](https://jshero.platzi.com/challenges)
 
 ## TEST Javascript
 
@@ -180,17 +184,110 @@ studentSuscription();
 > CICLOS / LOOP
 
 - ¿Qué es un ciclo?
-  Es un bucle que se repite hasta que se cumpla una condición.
+
+  Es un bucle que se repite hasta que se cumpla o deje de ser verdad una condición. Una tarea se puede repetir sin que tengas que hacerlo de manera manual.
 
 - ¿Qué tipos de ciclos existen en JavaScript?
+
   A) Ciclo FOR B) Do While C) While
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
+
   Puede fallar nuestro código e relentizar nuestra computadora.
   El ciclo Infinito: Es cuando nuestra condición no se cumple, y no termina el proceso (sigue y sigue...infinito).
 
 - ¿Puedo mezclar ciclos y condicionales?
- Sí. Podemos hacer un ciclo e una condicional hasta que se cumpla.
+  
+  Sí. Podemos hacer un ciclo e una condicional hasta que se cumpla.
+
+> Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
+```javascript
+const estudiantes = ["Luisa", "Alma", "Natasha", "Natalia"];
+
+function saludarEstudiante(estudiante) {
+   console.log(`Hola, ${estudiante}`);
+}
+
+for(let i = 0; i < estudiantes.length; i++) {
+  saludarEstudiante(estudiantes[i]);
+}
+
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+let i = 0;
+
+while(i < 5) {
+  i++;
+  console.log("El valor de i es: " + i);
+}
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+let i = 10;
+
+while(i >= 2) {
+  i--;
+  console.log(`El valor de i es: ${i}`);
+}
+
+```
+
+> Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+```javascript
+let num1 = 2;
+let num2 = 2;
+
+const results = {
+  q1: `Cuánto es ${num1} + ${num2} es igual a 4 ?`
+}
+
+function result() {
+  let user = prompt(results.q1);
+
+  if(user === results) {
+    console.log(`Felicidades, respondiste correctamente`);
+  } else {
+    console.log(`Lo siento, vuelve a resolverlo`);
+  }
+}
+
+result();
+
+```
+
+> Responde las siguientes preguntas:
+
+- ¿Qué es un Array?
+
+ Es una estructura de Datos (concepto de Javascript). Además, guarda valores adentro (objetos, datos, números, string).
+
+```javascript
+const array = ["Chris", "Natasha", "Alma", "Natalia"];
+console.log(array);
+console.log(array[0]);
+```
+
+- ¿Qué es un Objeto?
+
+  Javascript, es un lenguaje que está diseñado en un paradigma de Objetos.Podemos llevar un Objeto físico a un Paradigma de Objetos (Propiedades).
+  Clave (Key) y Valor (Value)
+
+```javascript
+  const myCar = {
+    marca: "Audi",
+    modelo: "Deportivo",
+    ano: 2020;
+  }
+
+  myCar();
+```
+
+- ¿Cuándo es mejor usar objetos o arrays?
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
 ## MIT LICENSE
 
