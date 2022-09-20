@@ -53,7 +53,7 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 - Nombre de Usuario de Platzi: "String"
 - Edad: "Number"
 - Correo Electrónico: "String"
-- Mayor de Edad: "Number"
+- Mayor de Edad: "Number" / "boolean"
 - Dinero Ahorrado: "Number"
 - Deudas; "Number".
 
@@ -65,17 +65,19 @@ Course Javascript Practice. Challenges Vanilla Javascript.
  let userNamePlatzi = "@ChrisVelázquez";
  let age = 25;
  let email = "placebo@gmail";
- let Adult = 35;
+ let isAdult = 35;
  let saveMoney = 10000;
  let debtMoney = 10000;
 ```
 
+> Images Scope and Variable
 ![](https://pbs.twimg.com/media/EeVw-DOXgAAMtKk.jpg);
 
 > Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
 ```javascript
- let nameComplete = name + lastName;
+ let nameComplete = name + " " + lastName;
+ let nameComplete = `${name} ${lastName}`;
  let realMoney = saveMoney - debtMoney;
 ```
 
@@ -91,14 +93,21 @@ Un conjunto de sentencias que llevan acabo acciones.Utilizamos los valores o par
 Tenemos dos tipos de funciones: 1) Declarativa y 2) Expresión o Anónimas.
 
 1) Declarativa:
+
+```javascript
   function myFunction() {
     return 3;
   }
+```
 
-2) Expresión:
+1) Expresión:
+
+```javascript
 const myFunction = function() {
   return a + b
 }
+```
+
 return = Retorna a un valor.
 return y Function => Son Palabras reservadas.
 
@@ -107,6 +116,9 @@ Para ejecutar pasos o cálculos para poder validar un resultado.
 
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
 Las Funciones necesitan Parámetros: Los parámetros son los valores que esperamos (variables declaradas y solicitadas en la función), para poder ejecutar algo.
+
+> Image Parameters and Arguments
+![](https://preview.redd.it/bxkz9iko0u681.png?auto=webp&s=dfcf8222d495f9c71bc5b5fb17468b33e7cba0e9)
 
 ```javascript
 function myFunction(num1, num2) {
@@ -139,10 +151,15 @@ person("Juan David", "Castro Gallego", "Juandc");
 - ¿Qué es un condicional?
 
   Son reglas que nos permiten ejecutar e validar ciertas reglas o acciones (cierto o falso / True or False).
+
+```javascript
   if(true) {
     console.log("Hola");
   }
+```
+
   resultado => Hola.
+
 - ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
 
   Tenemos:
