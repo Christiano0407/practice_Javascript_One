@@ -280,10 +280,23 @@ console.log(array[0]);
   const myCar = {
     marca: "Audi",
     modelo: "Deportivo",
-    ano: 2020;
+    annio: 2020;
   }
 
   myCar();
+  console.log(myCar.modelo);
+
+  const team = {
+    nombre: "EquipoA",
+    annio: 1900,
+    estadio: "Estadio Plus A"
+    nuevoJugador: function(){
+      console.log(`${this.nombre} y su estadio es: ${this.estadio}`);
+    }
+  }
+
+  team.nuevoJugador();
+
 ```
 
 - ¿Cuándo es mejor usar objetos o arrays?
