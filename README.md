@@ -55,19 +55,23 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 > (3) Traduce a código JavaScript las variables del ejemplo anterior.
 
-- const name = "Chris";
-- const lastName = "Velázquez";
-- let userNamePlatzi = "Chris Velázquez";
-- let age = 25;
-- let email = "placebo@gmail";
-- let Adult = 35;
-- let saveMoney = 10000;
-- let debtMoney = 10000;
+```javascript
+ const name = "Chris";
+ const lastName = "Velázquez";
+ let userNamePlatzi = "Chris Velázquez";
+ let age = 25;
+ let email = "placebo@gmail";
+ let Adult = 35;
+ let saveMoney = 10000;
+ let debtMoney = 10000;
+```
 
 > Calcula e imprime las siguientes variables a partir de las variables del ejemplo anterior:
 
+```javascript
 - let nameComplete = name + lastName;
 - let realMoney = saveMoney - debtMoney;
+```
 
 > Funciones Javascript
 
@@ -98,11 +102,14 @@ Para ejecutar pasos o cálculos para poder validar un resultado.
 - ¿Cuál es la diferencia entre parámetros y argumentos de una función?
 Las Funciones necesitan Parámetros: Los parámetros son los valores que esperamos (variables declaradas y solicitadas en la función), para poder ejecutar algo.
 
+```javascript
 function myFunction(num1, num2) {
    let result =  num1 + num2;
    return result;
 }
 myFunction(5, 10);
+```
+
 num1 y num2 = parámetros;
 resultado Final => 15;
 
@@ -110,6 +117,7 @@ Argumentos: Las Funciones nos piden declarar nuestras variables que son nuestros
 
 > Convierte el siguiente código en una función, pero, cambiando cuando sea necesario las variables constantes por parámetros y argumentos en una función:
 
+```javascript
 const completeName = name + lastName;
 
 function person(name, lastname, nickname) {
@@ -117,6 +125,7 @@ function person(name, lastname, nickname) {
 }
 
 person("Juan David", "Castro Gallego", "Juandc");
+```
 
 > CONDICIONALES
 
@@ -142,22 +151,46 @@ person("Juan David", "Castro Gallego", "Juandc");
 
 ## Javascript
 
+```javascript
 const suscription = "basic";
 
 function studentSuscription() {
+
   if(suscription === "free") {
     console.log("Solo puedes tomar los cursos gratis");
+  
   } else if(suscription === "basic") {
     console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+  
   } else if (suscription === "Expert") {
     console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+  
   } else if(suscription === "Expert Plus") {
      console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+  
   } else {
     console.log(error);
   }
+
 };
+
 studentSuscription();
+```
+
+> CICLOS / LOOP
+
+- ¿Qué es un ciclo?
+  Es un bucle que se repite hasta que se cumpla una condición.
+
+- ¿Qué tipos de ciclos existen en JavaScript?
+  A) Ciclo FOR B) Do While C) While
+
+- ¿Qué es un ciclo infinito y por qué es un problema?
+  Puede fallar nuestro código e relentizar nuestra computadora.
+  El ciclo Infinito: Es cuando nuestra condición no se cumple, y no termina el proceso (sigue y sigue...infinito).
+
+- ¿Puedo mezclar ciclos y condicionales?
+ Sí. Podemos hacer un ciclo e una condicional hasta que se cumpla.
 
 ## MIT LICENSE
 
