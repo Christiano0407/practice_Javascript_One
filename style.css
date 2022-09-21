@@ -40,6 +40,15 @@ img {
     object-fit: cover;
 }
 
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+.section-main {
+    width: 100%;
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
 }
