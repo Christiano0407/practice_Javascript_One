@@ -219,11 +219,13 @@ studentSuscription();
 
 - ¿Qué tipos de ciclos existen en JavaScript?
 
-  A) Ciclo For (Pide una Variable, Una validación y un incremento)
+  A) Ciclo For (Pide una Variable, Una validación y un incremento o decremento)
   
   B) do While => (Primero ejecuta el código y luego realiza la validación)
   
   C) While =>  (Hace la validacón antes de ejecutar la primera vez, el bloque de código).
+
+  - index => i
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
@@ -255,7 +257,7 @@ let i = 0;
 
 while(i < 5) {
   i++;
-  console.log("El valor de i es: " + i);
+  console.log(`El valor de i es: ${i}`);
 }
 
 for (let i = 10; i >= 2; i--) {
@@ -270,6 +272,10 @@ while(i >= 2) {
 }
 
 ```
+
+> Image Ciclo
+
+![](https://static.platzi.com/media/user_upload/do-while-dec64482-e844-46d2-a14b-ac506106d094.jpg);
 
 > Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
 
@@ -295,7 +301,17 @@ result();
 
 ```
 
-> Responde las siguientes preguntas:
+> Otra Forma:
+
+```javascript
+while(response !== 4) {
+  let question = prompt(`¿ How Many Is 2 + 2 ?`);
+  response = question;
+}
+
+```
+
+> Responde las siguientes preguntas: Array & Object
 
 - ¿Qué es un Array?
 
