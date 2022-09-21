@@ -29,6 +29,10 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 
 - [ReadME Project](https://github.blog/2022-09-21-the-readme-project-built-for-you/)
 
+> CDN Js
+
+- [CDN](https://cdnjs.com/)
+
 ## TEST Javascript
 
 > ¿Qué es una variable y para qué sirve?
@@ -420,6 +424,10 @@ getArray(["User", "UserTwo", "UserThree"]);
 
 > Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
 
+> Object.values() ==> MDN
+
+- [object_values](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
+
 ```javascript
 const people = {
   name: "Pammela",
@@ -427,10 +435,22 @@ const people = {
   lastName: "Velázquez"
 }
 
+// === 1)
 function informationPeople(information) {
  for(let key in information) {
   console.log(information[key]);
  }
+}
+
+informationPeople(people);
+
+// === 2)
+
+function informationPeople(info) {
+  const arr = Object.values(info);
+  for(let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
 
 informationPeople(people);
