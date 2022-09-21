@@ -5,6 +5,7 @@ const textOne = document.querySelector(`#idTextOne`);
 const textTwo = document.querySelector(`#idTextTwo`);
 const textThree = document.querySelector(`#idTextThree`);
 const input = document.querySelector(`#idInputText`);
+//console.log(input.value);
 const sectionOne = document.getElementById(`idSectionMain`);
 
 //*TODO ===  === === === === === === === === === === === */
@@ -15,5 +16,8 @@ image.src =
 image.width = 250;
 image.height = 200;
 sectionOne.appendChild(image);
+
 title.innerHTML = "Manipulation Of DOM";
 textOne.textContent = "Javascript Manipulation Text";
+textTwo.textContent = "This is Text Two";
+textThree.textContent = "Three Text New";
