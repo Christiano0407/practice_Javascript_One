@@ -16,7 +16,7 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 - [30_second_of_code](https://www.30secondsofcode.org/js/p/1)
 - [Platzi_Javascript_Hero](https://jshero.platzi.com/challenges)
 
-> Answers
+> Questions and Answers
 
 - [StackOverflow](https://es.stackoverflow.com/)
 - [YouCode](https://you.com/code)
