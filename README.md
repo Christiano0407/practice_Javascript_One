@@ -81,7 +81,7 @@ Course Javascript Practice. Challenges Vanilla Javascript.
  const lastName = "Velázquez";
  let userNamePlatzi = "@ChrisVelázquez";
  let age = 25;
- let email = "placebo@gmail";
+ let email = "test@gmail";
  let isAdult = 35;
  let saveMoney = 10000;
  let debtMoney = 10000;
