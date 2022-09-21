@@ -219,16 +219,20 @@ studentSuscription();
 
 - ¿Qué tipos de ciclos existen en JavaScript?
 
-  A) Ciclo FOR B) Do While C) While
+  A) Ciclo For (Pide una Variable, Una validación y un incremento)
+  
+  B) do While => (Primero ejecuta el código y luego realiza la validación)
+  
+  C) While =>  (Hace la validacón antes de ejecutar la primera vez, el bloque de código).
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
   Puede fallar nuestro código e relentizar nuestra computadora.
-  El ciclo Infinito: Es cuando nuestra condición no se cumple, y no termina el proceso (sigue y sigue...infinito).
+  El ciclo Infinito: Es cuando nuestra condición no se cumple, y no termina el proceso (sigue y sigue...infinito).Termina toteando (dañando).Además, el navegador ya no puede con tanta ejecución de ese bloque de código.
 
 - ¿Puedo mezclar ciclos y condicionales?
   
-  Sí. Podemos hacer un ciclo e una condicional hasta que se cumpla.
+  Sí. Podemos hacer un ciclo e una condicional hasta que se cumpla; Aunque, los ciclos son una especie de condicionales, nada nos impide agregar más condicionales dentro de un ciclo.
 
 > Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
 
@@ -246,6 +250,7 @@ for(let i = 0; i < estudiantes.length; i++) {
 for (let i = 0; i < 5; i++) {
     console.log("El valor de i es: " + i);
 }
+
 let i = 0;
 
 while(i < 5) {
@@ -256,6 +261,7 @@ while(i < 5) {
 for (let i = 10; i >= 2; i--) {
     console.log("El valor de i es: " + i);
 }
+
 let i = 10;
 
 while(i >= 2) {
