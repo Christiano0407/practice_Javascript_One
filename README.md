@@ -16,6 +16,19 @@ Course Javascript Practice. Challenges Vanilla Javascript.
 - [30_second_of_code](https://www.30secondsofcode.org/js/p/1)
 - [Platzi_Javascript_Hero](https://jshero.platzi.com/challenges)
 
+> Answers
+
+- [StackOverflow](https://es.stackoverflow.com/)
+- [YouCode](https://you.com/code)
+
+> Readme Md
+
+- [editor.md](https://pandao.github.io/editor.md/en.html)
+
+> The ReadME Project: Built for you!
+
+- [ReadME Project](https://github.blog/2022-09-21-the-readme-project-built-for-you/)
+
 ## TEST Javascript
 
 > ¿Qué es una variable y para qué sirve?
@@ -315,7 +328,7 @@ while(response !== 4) {
 
 - ¿Qué es un Array?
 
- Es una estructura de Datos (concepto de Javascript). Además, guarda valores adentro (objetos, datos, números, string).
+ Es una estructura de Datos o lista de eleemntos (concepto de Javascript). Además, guarda valores adentro (objetos, datos, números, string).
 
 ```javascript
 const array = ["Chris", "Natasha", "Alma", "Natalia"];
@@ -326,6 +339,7 @@ console.log(array[0]);
 - ¿Qué es un Objeto?
 
   Javascript, es un lenguaje que está diseñado en un paradigma de Objetos.Podemos llevar un Objeto físico a un Paradigma de Objetos (Propiedades).
+  Es una lista de elementos; pero, cada elemento tiene un nombre clave.
   Clave (Key) y Valor (Value)
 
 ```javascript
@@ -371,10 +385,11 @@ console.log(nuevoAuto);
 - ¿Cuándo es mejor usar objetos o arrays?
 
   Utilizamos Objetos en el momento que el conjunto de elementos es grande; Además, tiene distintos valores.
+  "Array", cuando lo que haremos en un elemento es el mismo que todos los demás(La regla se puede incumplir).
 
 - ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
 
-  Sí.
+  Sí. Los "Array", puede guardar estructura de datos; además, objetos. Mientras que, los "Objects", pueden guardar los "array" entre sus propiedades.
 
 > Method
 
@@ -400,7 +415,6 @@ function getArray(array) {
 }
 
 getArray(["User", "UserTwo", "UserThree"]);
-console.log(getArray);
 
 ```
 
@@ -415,7 +429,7 @@ const people = {
 
 function informationPeople(information) {
  for(let key in information) {
-  console.log(information[key]); 
+  console.log(information[key]);
  }
 }
 
@@ -423,7 +437,7 @@ informationPeople(people);
 
 ```
 
-## GitHub Respuestas
+## GitHub Response Test Platzi
 
 - [Platzi_Test](https://github.com/platzi/curso-js-practico/tree/variables);
 
