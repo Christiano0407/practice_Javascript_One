@@ -376,6 +376,10 @@ console.log(nuevoAuto);
 
   Sí.
 
+> Method
+
+![](https://i.ibb.co/Sdv3Qkc/image.png);
+
 > Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
 
 ```javascript
