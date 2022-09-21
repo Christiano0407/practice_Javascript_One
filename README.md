@@ -205,6 +205,7 @@ console.log(person);
 ```javascript
 const suscription = "basic";
 
+// === One ===
 function studentSuscription() {
 
   if(suscription === "free") {
@@ -213,10 +214,10 @@ function studentSuscription() {
   } else if(suscription === "basic") {
     console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
   
-  } else if (suscription === "Expert") {
+  } else if (suscription === "expert") {
     console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
   
-  } else if(suscription === "Expert Plus") {
+  } else if(suscription === "expert Plus") {
      console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
   
   } else {
@@ -226,6 +227,59 @@ function studentSuscription() {
 };
 
 studentSuscription();
+```
+
+```javascript
+// === Two ===
+
+function studentSuscription(suscription) {
+
+  if(suscription === "free") {
+    console.log("Solo puedes tomar los cursos gratis");
+    return
+  }
+  if(suscription === "basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+    return
+  }
+  if (suscription === "expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+    return
+  }
+  if(suscription === "expert Plus") {
+     console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+     return
+  }
+     console.log("Este tipo de Suscripción no existe!");
+};
+
+studentSuscription("free");
+studentSuscription("basic");
+// === Return ===> Para la función (No entran todas, va una por una) ===
+```
+
+```javascript
+// === Three New === 
+const studentSuscription = {
+  free: "Solo puedes tomar los cursos gratis",
+  basic: "Puedes tomar casi todos los cursos de Platzi durante un mes",
+  expert: "Puedes tomar casi todos los cursos de Platzi durante un año",
+  expertPlus: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año",
+}
+studentSuscription.free;
+studentSuscription[`free`];
+
+const exampleSuscription = "free";
+studentSuscription[exampleSuscription]; //===> "free"
+
+function studentSuscriptionType(suscription) {
+  if(studentSuscription[suscription]) {
+    console.log(studentSuscription [suscription])
+    return
+  }
+    console.warn("Ese tipo de suscripción no existe");
+}
+
 ```
 
 > CICLOS / LOOP
