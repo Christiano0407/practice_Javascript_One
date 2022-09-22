@@ -8,6 +8,8 @@ const sectionOne = document.getElementById(`idSectionMain`);
 const btn = document.getElementById(`idBtnClick`);
 const btnAdd = document.getElementById(`idBtnClickImg`);
 const idImage = document.querySelector(`#idImage`);
+const idTextInput = document.querySelector(`#idTextInput`);
+const inputDiscount = document.querySelector(`#discount`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
@@ -27,8 +29,10 @@ textOne.textContent = "APP Images";
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
 function eventClick() {
-  console.log(input.value);
-  console.log(inputName.value);
+  /* sectionOne.append(idTextInput); */
+  idTextInput.append(
+    `${input.value}: ${inputName.value - inputDiscount.value}`
+  );
 }
 
 btnAdd.addEventListener("click", addImg);
