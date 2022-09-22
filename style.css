@@ -80,3 +80,15 @@ p {
     margin: 1rem 1rem;
     width: 25rem;
 }
+
+.label-click {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.main-title {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 3rem;
+    font-weight: 700;
+}

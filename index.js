@@ -26,4 +26,4 @@ title.innerHTML = "Manipulation Of DOM";
 textOne.textContent = "Javascript Manipulation Text";
 textTwo.textContent = "This is Text Two";
 textThree.textContent = "Three Text New";
-input.value = 150;
+console.log(input.value);
