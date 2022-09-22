@@ -3,8 +3,10 @@
 const title = document.querySelector(`#idTitle`);
 const textOne = document.querySelector(`#idTextOne`);
 const input = document.querySelector(`#idInputText`);
+const inputName = document.querySelector(`#name`);
 const sectionOne = document.getElementById(`idSectionMain`);
 const btn = document.getElementById(`idBtnClick`);
+const idImage = document.querySelector(`#idImage`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
@@ -15,14 +17,14 @@ image.width = 250;
 image.height = 200;
 //image.setAttribute(`class`, `img-DOM`);
 image.classList.add("img-DOM");
-sectionOne.appendChild(image);
-
 title.innerHTML = "Manipulation Of DOM";
 textOne.textContent = "APP Images";
 
-//*Todo === Events === === === */
+//*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
 
 function eventClick() {
   console.log(input.value);
+  console.log(inputName.value);
+  idImage.appendChild(image);
 }
