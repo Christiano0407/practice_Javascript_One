@@ -6,6 +6,7 @@ const input = document.querySelector(`#idInputText`);
 const inputName = document.querySelector(`#name`);
 const sectionOne = document.getElementById(`idSectionMain`);
 const btn = document.getElementById(`idBtnClick`);
+const btnAdd = document.getElementById(`idBtnClickImg`);
 const idImage = document.querySelector(`#idImage`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
@@ -25,9 +26,12 @@ textOne.textContent = "APP Images";
 
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
-
 function eventClick() {
   console.log(input.value);
   console.log(inputName.value);
+}
+
+btnAdd.addEventListener("click", addImg);
+function addImg() {
   idImage.append(image, figureCaption);
 }
