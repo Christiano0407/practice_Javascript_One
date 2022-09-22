@@ -92,3 +92,15 @@ p {
     font-size: 3rem;
     font-weight: 700;
 }
+
+/* === Button === */
+.btn {
+    width: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
