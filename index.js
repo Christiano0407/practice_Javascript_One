@@ -10,6 +10,7 @@ const btnAdd = document.getElementById(`idBtnClickImg`);
 const idImage = document.querySelector(`#idImage`);
 const idTextInput = document.querySelector(`#idTextInput`);
 const inputDiscount = document.querySelector(`#discount`);
+const formulary = document.querySelector(`#idForm`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);

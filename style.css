@@ -48,6 +48,11 @@ main {
 }
 
 .section-main {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+form {
     width: 50%;
     margin: 2rem auto;
     display: flex;
