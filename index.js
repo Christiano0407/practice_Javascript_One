@@ -29,7 +29,9 @@ textOne.textContent = "APP Images";
 
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
-function eventClick() {
+function eventClick(event) {
+  //console.log({ event });
+  //event.preventDefault();
   /* sectionOne.append(idTextInput); */
   idTextInput.append(
     `${input.value}: ${inputName.value - inputDiscount.value}`
