@@ -1,0 +1,17 @@
+/* === Buttons === */
+.btn {
+    padding: 1rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-whiteOne);
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: var(--font-size-text);
+}
+
+.btn:hover {
+    background-color: var(--clr-light-p);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}

@@ -4,6 +4,13 @@
 
 /* === Root === */
 :root {
+    /* =  Color Base =*/
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-whiteOne: #f2f2f2;
+    --clr-blackOne: #333;
+    --clr-dark-grain: #042326;
+    --clr-dark-grainOne: #0A3A40;
     /* =  Palette Color =  */
     --clr-primary: #F20587;
     --clr-secondary: #1C17A6;
@@ -15,6 +22,62 @@
     --font-family-m: 'Montserrat', sans-serif;
     --font-family-fashion: 'Bodoni Moda', serif;
     /* = size Font = */
+    --font-size-title: 4rem;
+    --font-size-titleTwo: 2.4rem;
+    --font-size-titleThree: 1.8rem;
+    --font-size-text: 1.6rem;
+    --font-size-paragraph: 1.4rem;
+    /* = Margin = */
+    --margin: 0rem auto;
+    --margin-one: 2rem auto;
+    --margin-space: 1rem;
+    --margin-top: 2rem;
+    --margin-bottom: 2rem;
+    /* = letter Spacing = */
+    --letter-spacing: .1rem;
+    /* == Padding == */
+    --padding: 1rem;
+    --padding-one: 1rem 3rem;
+    /* == Img == */
+    --object-fit: cover;
+    --object-fit-contain: contain;
 }
 
 /* === General CSS  === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+span {
+    letter-spacing: var(--letter-spacing);
+}
+
+body {
+    width: 100%;
+    background-color: var(--clr-whiteOne);
+}
