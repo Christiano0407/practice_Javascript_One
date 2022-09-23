@@ -1,0 +1,20 @@
+/* === Import === */
+@import url("./css/mediaQueeries.css");
+@import url("./css/btnCss.css");
+
+/* === Root === */
+:root {
+    /* =  Palette Color =  */
+    --clr-primary: #F20587;
+    --clr-secondary: #1C17A6;
+    --clr-complementary: #F2E529;
+    --clr-light-p: #F25ECB;
+    --clr-light-s: #3029F2;
+    --clr-extra: #A6586D;
+    /* = Font = */
+    --font-family-m: 'Montserrat', sans-serif;
+    --font-family-fashion: 'Bodoni Moda', serif;
+    /* = size Font = */
+}
+
+/* === General CSS  === */
