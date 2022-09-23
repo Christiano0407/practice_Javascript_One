@@ -1,0 +1,37 @@
+/* === Mobile === */
+@media (max-width: 370px) {}
+
+@media (max-width: 575px) {}
+
+/* == Mobile Screep === */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* === Laptop === */
+@media (min-width: 768px) {}
+
+/* === Screen === */
+@media (min-width: 1024px) {}
+
+@media (min-width: 1280px) {}
+
+/* === Max Screen === */
+@media (min-width: 1440px) {}
+
+@media (min-width: 1920px) {}
+
+/* === Media Orientation ===*/
+@media screen and (orientation: landscape) {
+
+    /*Styles for landscape mode.*/
+    body::after {
+        content: "Landscape";
+    }
+}
+
+@media screen and (orientation: portrait) {
+
+    /* Styles for portrait mode. */
+    body::after {
+        content: "Portrait";
+    }
+}
