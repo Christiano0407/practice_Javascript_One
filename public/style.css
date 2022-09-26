@@ -67,6 +67,8 @@ html {
 body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-whiteOne);
+    /*   position: fixed; */
 }
 
 img {
@@ -78,9 +80,9 @@ img {
 
 main {
     width: 100%;
-    margin: 2rem auto;
+    /*  margin: 2rem auto; */
     padding: .5rem;
-    outline: 1px solid #000;
+    /*  outline: 1px solid #000; */
 }
 
 .section-main {
@@ -89,13 +91,16 @@ main {
 }
 
 form {
-    width: 50%;
+    width: 75%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    outline: 4px solid #333;
+    background-color: var(--clr-primary);
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 1px 2px 10px 2px #333;
 }
 
 ul {
@@ -119,9 +124,13 @@ p {
 }
 
 .input-text {
-    padding: .5rem;
+    padding: 1rem;
     margin: 1rem 1rem;
     width: 25rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
 }
 
 .label-click {
@@ -132,7 +141,8 @@ p {
 .main-title {
     text-align: center;
     margin: 2rem auto;
-    font-size: 3rem;
+    font-size: 4rem;
+    color: var(--clr-dark-grain);
     font-weight: 700;
 }
 
@@ -143,4 +153,9 @@ p {
 
 .text-input {
     margin: 1rem auto;
+}
+
+.main-layout {
+    width: 100%;
+    display: grid;
 }

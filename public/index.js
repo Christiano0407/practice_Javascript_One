@@ -24,7 +24,7 @@ image.height = 200;
 image.classList.add("img-DOM");
 image.alt = "imgNew";
 figureCaption.textContent = "Image App New";
-title.innerHTML = "Manipulation Of DOM";
+title.innerHTML = "Enter & Search Your Photos";
 textOne.textContent = "APP Images";
 
 //*Todo === Events === === === === === === */
