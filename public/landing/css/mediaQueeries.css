@@ -5,10 +5,13 @@
     .main-principal {
         grid-template-columns: auto;
         grid-template-rows: 70% 30%;
+        position: absolute;
+
     }
 
     .landing__photo {
         grid-row: 1 / 3;
+        position: relative;
     }
 
     .landing__background {
@@ -23,6 +26,27 @@
     .landing__photoTitle--title {
         font-size: 3rem;
         font-weight: 700;
+    }
+
+    .landing__footer {
+        background-color: #f2f2f2;
+        border-top-right-radius: 7.5rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing__footer--title {
+        font-size: 1.8rem;
+        font-family: var(--font-family-fashion);
+        font-weight: 700;
+        margin: 2rem auto;
+    }
+
+    .landing__btn {
+        position: absolute;
     }
 }
 

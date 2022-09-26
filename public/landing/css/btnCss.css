@@ -15,3 +15,9 @@
 .btn:active {
     transform: scale(0.9);
 }
+
+.footer--btn {
+    width: 90%;
+    text-align: center;
+    border: none;
+}

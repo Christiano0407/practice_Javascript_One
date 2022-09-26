@@ -1,5 +1,5 @@
 /* === Import === */
-@import url("./css/mediaQueeries.css");
+/* @import url("./css/mediaQueeries.css"); */
 @import url("./css/btnCss.css");
 
 /* === Root === */
@@ -80,6 +80,7 @@ span {
 body {
     width: 100%;
     background-color: var(--clr-whiteOne);
+    position: fixed;
 }
 
 /* === Main */
@@ -102,7 +103,7 @@ body {
 .landing__background {
     width: 100%;
     height: 100%;
-    background-image: url("../src/assets/img/img12Mobile.jpg");
+    background-image: url("../src/assets/img/img3Mobile.jpg");
     object-fit: contain;
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,4 +130,22 @@ body {
 .landing__photoTitle--title {
     color: var(--clr-whiteOne);
     font-family: var(--font-family-fashion);
+}
+
+/* === Landing Foooter */
+
+.landing__btn {
+    grid-row: 2 / 3;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.landing__footer {
+    width: 100%;
+    grid-row: 2 / 3;
+    height: 100%;
+    display: flex;
+    padding: 2rem;
 }
