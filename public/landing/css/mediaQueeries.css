@@ -70,7 +70,23 @@
 @media (min-width: 576px) and (max-width: 767px) {}
 
 /* === Laptop === */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    #idMain {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    #idLandingPhoto {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    #landingBtn {
+        grid-column: 2 / 3;
+        grid-row: auto;
+    }
+}
 
 /* === Screen === */
 @media (min-width: 1024px) {}
