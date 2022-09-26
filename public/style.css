@@ -1,4 +1,5 @@
 /* === Import === */
+@import url("./src/css/stylebtn.css");
 
 /* === Root Design System === */
 :root {
@@ -11,8 +12,43 @@
     --clr-two-section: #00E3CC;
     --clr-principal: #C6D93B;
     --clr-secondary: #6DBF1B;
-    /* === Margin */
-    --margin: 2rem auto;
+    /* =  Color Base =*/
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-whiteOne: #f2f2f2;
+    --clr-blackOne: #333;
+    --clr-dark-grain: #042326;
+    --clr-dark-grainOne: #0A3A40;
+    /* =  Palette Color =  */
+    --clr-primary: #F20587;
+    --clr-secondary: #1C17A6;
+    --clr-complementary: #F2E529;
+    --clr-light-p: #F25ECB;
+    --clr-light-s: #3029F2;
+    --clr-extra: #A6586D;
+    /* = Font = */
+    --font-family-m: 'Montserrat', sans-serif;
+    --font-family-fashion: 'Bodoni Moda', serif;
+    /* = size Font = */
+    --font-size-title: 4rem;
+    --font-size-titleTwo: 2.4rem;
+    --font-size-titleThree: 1.8rem;
+    --font-size-text: 1.6rem;
+    --font-size-paragraph: 1.4rem;
+    /* = Margin = */
+    --margin: 0rem auto;
+    --margin-one: 2rem auto;
+    --margin-space: 1rem;
+    --margin-top: 2rem;
+    --margin-bottom: 2rem;
+    /* = letter Spacing = */
+    --letter-spacing: .1rem;
+    /* == Padding == */
+    --padding: 1rem;
+    --padding-one: 1rem 3rem;
+    /* == Img == */
+    --object-fit: cover;
+    --object-fit-contain: contain;
 }
 
 /* === General === */
@@ -100,31 +136,6 @@ p {
     font-weight: 700;
 }
 
-/* === Button === */
-.div-btn {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.btn {
-    width: 10rem;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-.btn:hover {
-    background-color: #333;
-    color: #f4f4f4;
-}
-
-.btn:active {
-    transform: scale(0.9);
-}
 
 .img-DOM {
     border-radius: 1rem;
