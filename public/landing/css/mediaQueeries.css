@@ -2,6 +2,14 @@
 @media (max-width: 370px) {}
 
 @media (max-width: 575px) {
+    .landing__footer--title {
+        display: none;
+    }
+
+    .landing__photoTitle--titleTwo {
+        display: none;
+    }
+
     .main-principal {
         grid-template-columns: auto;
         grid-template-rows: 70% 30%;
@@ -71,6 +79,10 @@
 
 /* === Laptop === */
 @media (min-width: 768px) {
+    .landing__photoTitle--title {
+        display: none;
+    }
+
     #idMain {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         grid-template-rows: auto;
@@ -85,7 +97,45 @@
     #landingBtn {
         grid-column: 2 / 3;
         grid-row: auto;
+        background-color: var(--clr-primary);
     }
+
+    #idLandingFooter {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    #btnFooter {
+        background-color: var(--clr-secondary);
+        margin-top: 1rem;
+    }
+
+    #btnFooter:hover {
+        background-color: var(--clr-primary);
+        border: 4px solid #333;
+    }
+
+    .landing__photoTitle--titleTwo {
+        font-size: 6rem;
+        font-weight: 900;
+        margin: 3rem auto;
+        text-align: center;
+        color: #f2f2f2;
+    }
+
+    #idFooterTitle {
+        font-size: 2rem;
+        margin: 2rem auto;
+        text-align: center;
+        color: #f2f2f2;
+        opacity: 0.5;
+        font-weight: 500;
+        font-family: var(--font-family-m);
+        width: 90%;
+    }
+
 }
 
 /* === Screen === */
