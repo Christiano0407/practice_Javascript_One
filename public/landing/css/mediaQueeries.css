@@ -18,32 +18,48 @@
         filter: saturate(0.5);
     }
 
+    .landing__photoLogo {
+        display: none;
+    }
+
     .landing__photoTitle {
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
     }
 
     .landing__photoTitle--title {
-        font-size: 3rem;
-        font-weight: 700;
+        font-size: 4rem;
+        font-weight: 900;
+        text-align: center;
     }
 
-    .landing__footer {
-        background-color: #f2f2f2;
+    .landing__photoTitle::after {
+        content: " ";
+        outline: 2px solid #f2f2f2;
+        width: 30%;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        filter: opacity(.5);
+    }
+
+    #idLandingFooter {
+        /*  background-color: #f2f2f2;
         border-top-right-radius: 7.5rem;
         border-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        flex-direction: column;
+        border-bottom-left-radius: 1rem; */
+        /*  flex-direction: column; */
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
     }
 
-    .landing__footer--title {
+    /*  #idFooterTitle {
         font-size: 1.8rem;
         font-family: var(--font-family-fashion);
         font-weight: 700;
         margin: 2rem auto;
-    }
+    } */
 
     .landing__btn {
         position: absolute;

@@ -16,8 +16,12 @@
     transform: scale(0.9);
 }
 
+a {
+    color: #f2f2f2;
+}
+
 .footer--btn {
-    width: 90%;
+    width: 60%;
     text-align: center;
     border: none;
 }
