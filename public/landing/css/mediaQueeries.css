@@ -75,7 +75,66 @@
 }
 
 /* == Mobile Screep === */
-@media (min-width: 576px) and (max-width: 767px) {}
+@media (min-width: 575px) and (max-width: 768px) {
+    .landing__footer--title {
+        display: none;
+    }
+
+    .landing__photoTitle--titleTwo {
+        display: none;
+    }
+
+    .main-principal {
+        grid-template-columns: auto;
+        grid-template-rows: 70% 30%;
+        position: absolute;
+
+    }
+
+    .landing__photo {
+        grid-row: 1 / 3;
+        position: relative;
+    }
+
+    .landing__background {
+        filter: saturate(0.5);
+    }
+
+    .landing__photoLogo {
+        display: none;
+    }
+
+    .landing__photoTitle {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .landing__photoTitle--title {
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .landing__photoTitle::after {
+        content: " ";
+        outline: 2px solid #f2f2f2;
+        width: 30%;
+        margin-top: 1.5rem;
+        border-radius: 1rem;
+        filter: opacity(.5);
+    }
+
+    #idLandingFooter {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .landing__btn {
+        position: absolute;
+    }
+}
 
 /* === Laptop === */
 @media (min-width: 768px) {
