@@ -139,12 +139,32 @@
 }
 
 /* === Screen === */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .landing__photoTitle--titleTwo {
+        font-size: 8rem;
+    }
+}
 
 @media (min-width: 1280px) {}
 
 /* === Max Screen === */
-@media (min-width: 1440px) {}
+@media (min-width: 1440px) {
+    .landing__photoTitle--titleTwo {
+        font-size: 9rem;
+    }
+
+    #idFooterTitle {
+        font-size: 3rem;
+    }
+
+    #btnFooter {
+        height: 10%;
+    }
+
+    #btnFooter a {
+        font-size: 2rem;
+    }
+}
 
 @media (min-width: 1920px) {}
 
