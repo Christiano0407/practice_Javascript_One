@@ -206,6 +206,14 @@ p {
     opacity: 0;
 }
 
+/* == Add New class => DOM */
+.form__group--correct .validation__estate {
+    color: #1ed12d;
+    opacity: 1;
+    font-weight: 700;
+}
+
+/* === Label */
 .form__label {
     font-size: 1.4rem;
     color: #000;
