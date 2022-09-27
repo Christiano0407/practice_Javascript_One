@@ -213,6 +213,17 @@ p {
     font-weight: 700;
 }
 
+.form__group--incorrect .label-click {
+    color: #b22929;
+    border-radius: 1rem;
+}
+
+.form__group--incorrect .validation__estate {
+    color: #b22929;
+    opacity: 1;
+    font-weight: 700;
+}
+
 /* === Label */
 .form__label {
     font-size: 1.4rem;
