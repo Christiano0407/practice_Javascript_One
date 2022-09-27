@@ -91,7 +91,7 @@ main {
 }
 
 form {
-    width: 75%;
+    width: 80%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
@@ -161,8 +161,20 @@ p {
 }
 
 /* === New Add Formulary*/
-.input__error--text {
+.form__group {
+    width: 90%;
+    padding: .5rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__error--text,
+.input__error--textPassword {
     font-size: 1.2rem;
     font-weight: 900;
     color: #000;
+    text-align: center;
 }

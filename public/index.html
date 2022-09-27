@@ -36,12 +36,28 @@
                     </div>
                     <p class="input__error--text" id="idInputError"></p>
                 </div>
-                <label for="name" class="label-click">Suscription</label>
-                <input type="number" id="name" class="input-text" name="name" placeholder="Suscription">
-                <label for="discount" class="label-click">Discount</label>
-                <input type="number" id="discount" class="input-text" name="discount" placeholder="%">
-                <label for="password" class="label-click">Password</label>
-                <input type="text" class="input-text" id="idPassword" placeholder="Password@email.com" name="password">
+                <div class="form__group" id="idFormGroup">
+                    <label for="name" class="label-click">Suscription</label>
+                    <div class="form__group--user" id="idFormGroupUser">
+                        <input type="number" id="name" class="input-text" name="name" placeholder="Suscription">
+                        <i class="validation__estate fa-regular fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <div class="form__group" id="idFormGroup">
+                    <label for="discount" class="label-click">Discount</label>
+                    <div class="form__group--user" id="idFormUser">
+                        <input type="number" id="discount" class="input-text" name="discount" placeholder="%">
+                    </div>
+                </div>
+                <div class="form__group" id="idFormGroup">
+                    <label for="password" class="label-click">Password</label>
+                    <div class="form__group--user" id="idFormGroupUser">
+                        <input type="email" class="input-text" id="Password" placeholder="Password@email.com"
+                            name="password">
+                        <i class="validation__estate fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <p class="input__error--textPassword" id="idInputErrorPassword"></p>
+                </div>
                 <p class="text-input" id="idTextInput"></p>
                 <div class="div-btn" id="btnDiv">
                     <button class="btn button" type="button" id="idBtnClick">Click Me!</button>

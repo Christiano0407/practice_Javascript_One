@@ -12,6 +12,7 @@ const idTextInput = document.querySelector(`#idTextInput`);
 const inputDiscount = document.querySelector(`#discount`);
 const formulary = document.querySelector(`#idForm`);
 const textError = document.querySelector(`#idInputError`);
+const textErrorPassword = document.querySelector(`#idInputErrorPassword`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
@@ -25,9 +26,11 @@ image.height = 200;
 image.classList.add("img-DOM");
 image.alt = "imgNew";
 figureCaption.textContent = "Image App New";
-title.innerHTML = "Enter & confirm User";
+title.innerHTML = "User: Enter & confirm";
 textOne.textContent = "APP Images";
 textError.textContent = "Have 8 or 16 Characters of the User";
+textErrorPassword.textContent =
+  "Your Password have: name, characters and numbers";
 
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
