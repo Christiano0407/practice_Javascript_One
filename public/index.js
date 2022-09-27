@@ -11,6 +11,7 @@ const idImage = document.querySelector(`#idImage`);
 const idTextInput = document.querySelector(`#idTextInput`);
 const inputDiscount = document.querySelector(`#discount`);
 const formulary = document.querySelector(`#idForm`);
+const textError = document.querySelector(`#idInputError`);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
@@ -24,8 +25,9 @@ image.height = 200;
 image.classList.add("img-DOM");
 image.alt = "imgNew";
 figureCaption.textContent = "Image App New";
-title.innerHTML = "Enter & Search Your Photos";
+title.innerHTML = "Enter & confirm User";
 textOne.textContent = "APP Images";
+textError.textContent = "Have 8 or 16 Characters of the User";
 
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
