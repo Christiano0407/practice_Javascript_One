@@ -179,3 +179,19 @@ p {
     color: #000;
     text-align: center;
 }
+
+/* === Animation  Input */
+.form__group--user {
+    position: relative;
+}
+
+.form__group--user input {
+    transition: .1s ease-in-out all;
+}
+
+.form__group--user input:focus {
+    border: 5px solid var(--clr-bg);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(160, 160, 160);
+    border-radius: 1rem;
+}
