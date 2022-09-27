@@ -161,7 +161,8 @@ p {
 }
 
 /* === New Add Formulary*/
-.form__group {
+.form__group,
+.form__error {
     width: 90%;
     padding: .5rem;
     margin: 1rem auto;
