@@ -34,6 +34,7 @@
     .section-main {
         width: 100%;
         grid-row: 2 / 3;
+        margin: 0;
     }
 
     .text-one {
@@ -45,7 +46,7 @@
     .label-click {
         font-size: 1.6rem;
         font-weight: 500;
-        margin: 1rem;
+        /*   margin: 1rem; */
     }
 
     .main-title {

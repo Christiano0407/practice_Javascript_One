@@ -165,7 +165,7 @@ p {
 .form__error {
     width: 90%;
     padding: .5rem;
-    margin: 1rem auto;
+    /*  margin: 1rem auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
