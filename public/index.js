@@ -33,6 +33,16 @@ textError.textContent = "Have 8 or 16 Characters of the User";
 textErrorPassword.textContent =
   "Your Password have: name, characters and numbers";
 
+//*Todo === === ===  Add Error ===  === ===  */
+const errorParagraph = document.createElement("p");
+errorParagraph.setAttribute(
+  "class",
+  "error__Paragraph fa-solid fa-triangle-exclamation"
+);
+errorParagraph.textContent = " Error: Please fill correct your formulary";
+//const icon = document.createElement("img");
+formError.append(errorParagraph);
+
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
 function eventClick(event) {
