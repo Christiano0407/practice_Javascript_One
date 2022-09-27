@@ -41,7 +41,8 @@ errorParagraph.setAttribute(
 );
 errorParagraph.textContent = " Error: Please fill correct your formulary";
 //const icon = document.createElement("img");
-formError.append(errorParagraph);
+
+errorParagraph.style.display = "none";
 
 //*Todo === Events === === === === === === */
 btn.addEventListener("click", eventClick);
@@ -52,6 +53,8 @@ function eventClick(event) {
   idTextInput.append(
     `${input.value}: ${inputName.value - inputDiscount.value}`
   );
+  formError.append(errorParagraph);
+  errorParagraph.style.display = "flex";
 }
 
 btnAdd.addEventListener("click", addImg);

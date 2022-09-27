@@ -179,6 +179,7 @@ p {
     color: #000;
     text-align: center;
     margin: 0;
+    display: none;
 }
 
 /* === Animation  Input */
@@ -191,8 +192,14 @@ p {
 }
 
 .form__group--user input:focus {
-    border: 5px solid var(--clr-bg);
+    border: 2px solid var(--clr-bg);
     outline: none;
-    box-shadow: 3px 0px 30px rgba(160, 160, 160);
+    box-shadow: 2px 0px 30px rgba(160, 160, 160);
     border-radius: 1rem;
+}
+
+.validation__estate {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
 }
