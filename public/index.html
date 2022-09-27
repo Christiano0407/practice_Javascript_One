@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../public/src/assets/icon/photo.png" type="image/icon" sizes="16x16">
     <link rel="stylesheet" href="./src/css/styleQueries.css">
     <link rel="stylesheet" href="./style.css">
     <title>Javascript Practice</title>
@@ -47,6 +48,7 @@
                     <label for="discount" class="label-click">Discount</label>
                     <div class="form__group--user" id="idFormUser">
                         <input type="number" id="discount" class="input-text" name="discount" placeholder="%">
+                        <i class="validation__estate fa-regular fa-circle-xmark"></i>
                     </div>
                 </div>
                 <div class="form__group" id="idFormGroup">
@@ -58,7 +60,15 @@
                     </div>
                     <p class="input__error--textPassword" id="idInputErrorPassword"></p>
                 </div>
+                <!-- Add Terms & Conditions -->
+                <div class="form__group" id="idFormTerms">
+                    <label class="form__label">
+                        <input type="checkbox" class="form__checkbox" name="terms" id="terms">
+                    </label>
+                </div>
+                <!-- Add DOM Js-->
                 <p class="text-input" id="idTextInput"></p>
+                <!-- Add Buttons -->
                 <div class="div-btn" id="btnDiv">
                     <button class="btn button" type="button" id="idBtnClick">Click Me!</button>
                     <button class="btn button-img" type="button" id="idBtnClickImg">AddImg</button>
