@@ -53,10 +53,11 @@ function eventClick(event) {
   idTextInput.append(
     `${input.value}: ${inputName.value - inputDiscount.value}`
   );
+  formError.style.background = "#f66868";
   formError.append(errorParagraph);
   errorParagraph.style.display = "flex";
 }
-
+btnAdd.style.display = "none";
 btnAdd.addEventListener("click", addImg);
 function addImg() {
   idImage.append(image, figureCaption);

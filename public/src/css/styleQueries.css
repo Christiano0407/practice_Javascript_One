@@ -53,6 +53,18 @@
         color: #fff;
     }
 
+    /* .form__error {
+        background-color: #f66868;
+    } */
+
+    .error__Paragraph {
+        width: 90%;
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
 }
 
 /* == Mobile Screep === */
