@@ -13,6 +13,7 @@ const inputDiscount = document.querySelector(`#discount`);
 const formulary = document.querySelector(`#idForm`);
 const textError = document.querySelector(`#idInputError`);
 const textErrorPassword = document.querySelector(`#idInputErrorPassword`);
+const formError = document.querySelector("#idFormError");
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
