@@ -38,20 +38,22 @@ textErrorPassword.textContent =
 
 //* === === === Regular Expressions === === === */
 const expressions = {
-  user: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letters, numbers, Screenplay y underscore
+  idInputText: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letters, numbers, Screenplay y underscore
   name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letter y space, can have accents.
   password: /^.{4,12}$/, // 4 a 12 digits.
   email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   phoneNumber: /^\d{7,14}$/, // 7 a 14 numbers.
+  discount: /^[a-zA-Z0-9\_\-]{4,16}$/,
 };
 
 //* === Camps*/
 const camps = {
-  user: false,
+  idInputText: false,
   name: false,
   password: false,
   email: false,
   phoneNumber: false,
+  discount: false,
 };
 
 //*Todo === === ===  Add Error ===  === ===  */
