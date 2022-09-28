@@ -76,19 +76,22 @@ const formularyValidation = (e) => {
   //console.log(e.target.name);
   if (e.target.name === "idInputText") {
     console.log("idInput");
-    validationCamp(expressions.idInputText, e.target, `idInputText`);
+    validationCamp(expressions.idInputText, e.target, "idInputText");
     return;
   }
   if (e.target.name === "name") {
     console.log("Name");
+    validationCamp(expressions.name, e.target, "name");
     return;
   }
   if (e.target.name === "discount") {
     console.log("Discount");
+    validationCamp(expressions.discount, e.target, "discount");
     return;
   }
   if (e.target.name === "password") {
     console.log("Password");
+    validationCamp(expressions.password, e.target, "password");
     return;
   }
 
@@ -96,23 +99,25 @@ const formularyValidation = (e) => {
 };
 // == idFormGroupUser / idFormGroupUser i
 //** === Function Validation */
+
 const validationCamp = (expression, input, camp) => {
   if (expression.test(input.value)) {
     document
       .getElementById(`${camp}`)
-      .classList.remove(`form__group--incorrect`);
-    document.getElementById(`${camp}`).classList.add(`form__group--correct`);
-    document.querySelector(`${camp}, i`).classList.remove(`fa-circle-xmark`);
-    document.querySelector(` ${camp}, i`).classList.add(`fa-user-group`);
+      .classList.remove("form__group--incorrect");
+    document.getElementById(`${camp}`).classList.add("form__group--correct");
+
+    document.querySelector(`${camp}, i`).classList.remove("fa-circle-xmark");
+    document.querySelector(` ${camp}, i`).classList.add("fa-user-group");
     inputError.classList.remove(`form__group--incorrect-active`);
     camps[camp] = true;
   } else {
-    document.getElementById(`${camp}`).classList.add(`form__group--incorrect`);
-    document.getElementById(`${camp}`).classList.remove(`form__group--correct`);
+    document.getElementById(`${camp}`).classList.add("form__group--incorrect");
+    document.getElementById(`${camp}`).classList.remove("form__group--correct");
 
-    document.querySelector(`${camp}, i`).classList.remove(`fa-user-group`);
-    document.querySelector(`${camp}, i`).classList.add(`fa-circle-xmark`);
-    inputError.classList.add(`form__group--incorrect-active`);
+    document.querySelector(`${camp}, i`).classList.remove("fa-user-group");
+    document.querySelector(`${camp}, i`).classList.add("fa-circle-xmark");
+    inputError.classList.add("form__group--incorrect-active");
     camps[camp] = false;
   }
 };
