@@ -85,22 +85,37 @@ const formularyValidation = (e) => {
   //console.log(e.target.name);
   if (e.target.name === "idInputText") {
     console.log("idInput");
-    return
+    if (expressions.idInputText.test(e.target.value)) {
+      document
+        .getElementById("idFormGroupUser")
+        .classList.remove("form__group--incorrect");
+      document
+        .getElementById("idFormGroupUser")
+        .classList.add("form__group--correct");
+    } else {
+      document
+        .getElementById("idFormGroupUser")
+        .classList.add("form__group--incorrect");
+      document
+        .getElementById("idFormGroupUser")
+        .classList.remove("form__group--correct");
+    }
+    return;
   }
   if (e.target.name === "name") {
     console.log("Name");
-    return
+    return;
   }
   if (e.target.name === "discount") {
     console.log("Discount");
-    return
+    return;
   }
   if (e.target.name === "password") {
     console.log("Password");
-    return
+    return;
   }
 
-  console.log("Not Access")
+  console.log("Not Access");
 };
 
 inputs.forEach((input) => {
