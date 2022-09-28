@@ -4,6 +4,8 @@ const title = document.querySelector(`#idTitle`);
 const textOne = document.querySelector(`#idTextOne`);
 const input = document.querySelector(`#idInputText`);
 const inputName = document.querySelector(`#name`);
+const inputError = document.querySelector("#idInputError");
+const inputErrorPassword = document.querySelector("#idInputErrorPassword");
 const sectionOne = document.getElementById(`idSectionMain`);
 const btn = document.getElementById(`idBtnClick`);
 const btnAdd = document.getElementById(`idBtnClickImg`);
@@ -78,6 +80,8 @@ function eventClick(event) {
   );
   formError.style.background = "#f66868";
   formError.append(errorParagraph);
+  inputError.style.display = "flex";
+  inputErrorPassword.style.display = "flex";
   errorParagraph.style.display = "flex";
 }
 // name => input

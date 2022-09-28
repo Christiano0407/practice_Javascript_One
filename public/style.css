@@ -211,6 +211,7 @@ p {
     color: #1ed12d;
     opacity: 1;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .form__group--incorrect .label-click {
@@ -222,6 +223,7 @@ p {
     color: #b22929;
     opacity: 1;
     font-weight: 700;
+    font-size: 1.5rem;
 }
 
 /* === Label */
