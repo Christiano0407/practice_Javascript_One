@@ -15,7 +15,7 @@ const textErrorPassword = document.querySelector(`#idInputErrorPassword`);
 const formError = document.querySelector("#idFormError");
 
 const formulary = document.querySelector(`#idForm`);
-const inputs = document.querySelectorAll(`#idForm input`);
+const inputs = document.querySelectorAll(`#idForm input`); // Access all form and Inp
 //console.log(inputs);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
@@ -65,11 +65,11 @@ errorParagraph.textContent = " Error: Please fill correct your formulary";
 
 errorParagraph.style.display = "none";
 
-//*Todo === Events === === === === === === */
+//*Todo === Events === & Form === === === === === */
 btn.addEventListener("click", eventClick);
+
 function eventClick(event) {
-  //console.log({ event });
-  //event.preventDefault();
+  event.preventDefault();
   /* sectionOne.append(idTextInput); */
   idTextInput.append(
     `${input.value}: ${inputName.value - inputDiscount.value}`
@@ -78,6 +78,17 @@ function eventClick(event) {
   formError.append(errorParagraph);
   errorParagraph.style.display = "flex";
 }
+// name => input
+const formularyValidation = (e) => {
+  //console.log(e.target.name);
+};
+
+inputs.forEach((input) => {
+  input.addEventListener("keyup", formularyValidation);
+  input.addEventListener("blur", formularyValidation);
+});
+
+//* === Button Img === */
 btnAdd.style.display = "none";
 btnAdd.addEventListener("click", addImg);
 function addImg() {
