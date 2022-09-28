@@ -10,10 +10,13 @@ const btnAdd = document.getElementById(`idBtnClickImg`);
 const idImage = document.querySelector(`#idImage`);
 const idTextInput = document.querySelector(`#idTextInput`);
 const inputDiscount = document.querySelector(`#discount`);
-const formulary = document.querySelector(`#idForm`);
 const textError = document.querySelector(`#idInputError`);
 const textErrorPassword = document.querySelector(`#idInputErrorPassword`);
 const formError = document.querySelector("#idFormError");
+
+const formulary = document.querySelector(`#idForm`);
+const inputs = document.querySelectorAll(`#idForm input`);
+//console.log(inputs);
 
 //*TODO ===  === === === Create Virtual DOM === === === === === === === === */
 const image = document.createElement(`img`);
