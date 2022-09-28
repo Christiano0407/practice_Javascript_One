@@ -85,10 +85,11 @@ const formularyValidation = (e) => {
 
       document
         .querySelector("#idFormGroupUser i")
-        .classList.remove("fa-circle-xmark");
+        .classList.remove(`fa-circle-xmark`);
       document
         .querySelector("#idFormGroupUser i")
         .classList.add(`fa-user-group`);
+      inputError.classList.remove("form__group--incorrect-active");
     } else {
       document
         .getElementById("idFormGroupUser")
@@ -96,6 +97,14 @@ const formularyValidation = (e) => {
       document
         .getElementById("idFormGroupUser")
         .classList.remove("form__group--correct");
+
+      document
+        .querySelector("#idFormGroupUser i")
+        .classList.remove(`fa-user-group`);
+      document
+        .querySelector("#idFormGroupUser i")
+        .classList.add(`fa-circle-xmark`);
+      inputError.classList.add("form__group--incorrect-active");
     }
     return;
   }
@@ -131,8 +140,6 @@ function eventClick(event) {
   );
   formError.style.background = "#f66868";
   formError.append(errorParagraph);
-  inputError.style.display = "flex";
-  errorParagraph.style.display = "flex";
   inputErrorPassword.style.display = "flex";
 }
 

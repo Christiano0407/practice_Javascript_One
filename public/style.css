@@ -226,6 +226,10 @@ p {
     font-size: 1.5rem;
 }
 
+.form__group--incorrect-active {
+    display: flex;
+}
+
 /* === Label */
 .form__label {
     font-size: 1.4rem;
