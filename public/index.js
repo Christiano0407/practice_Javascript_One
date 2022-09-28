@@ -70,20 +70,6 @@ errorParagraph.textContent = " Error: Please fill correct your formulary";
 errorParagraph.style.display = "none";
 
 //*Todo === Events === & Form === === === === === */
-btn.addEventListener("click", eventClick);
-
-function eventClick(event) {
-  event.preventDefault();
-  /* sectionOne.append(idTextInput); */
-  idTextInput.append(
-    `${input.value}: ${inputName.value - inputDiscount.value}`
-  );
-  formError.style.background = "#f66868";
-  formError.append(errorParagraph);
-  inputError.style.display = "flex";
-  inputErrorPassword.style.display = "flex";
-  errorParagraph.style.display = "flex";
-}
 // name => input
 const formularyValidation = (e) => {
   //console.log(e.target.name);
@@ -96,6 +82,13 @@ const formularyValidation = (e) => {
       document
         .getElementById("idFormGroupUser")
         .classList.add("form__group--correct");
+
+      document
+        .querySelector("#idFormGroupUser i")
+        .classList.remove("fa-circle-xmark");
+      document
+        .querySelector("#idFormGroupUser i")
+        .classList.add(`fa-user-group`);
     } else {
       document
         .getElementById("idFormGroupUser")
@@ -126,6 +119,22 @@ inputs.forEach((input) => {
   input.addEventListener("keyup", formularyValidation);
   input.addEventListener("blur", formularyValidation);
 });
+
+//** === Btn Click */
+btn.addEventListener("click", eventClick);
+
+function eventClick(event) {
+  event.preventDefault();
+  /* sectionOne.append(idTextInput); */
+  idTextInput.append(
+    `${input.value}: ${inputName.value - inputDiscount.value}`
+  );
+  formError.style.background = "#f66868";
+  formError.append(errorParagraph);
+  inputError.style.display = "flex";
+  errorParagraph.style.display = "flex";
+  inputErrorPassword.style.display = "flex";
+}
 
 //* === Button Img === */
 btnAdd.style.display = "none";
