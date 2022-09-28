@@ -70,42 +70,13 @@ errorParagraph.textContent = " Error: Please fill correct your formulary";
 errorParagraph.style.display = "none";
 
 //*Todo === Events === & Form === === === === === */
+const idFormGroupUser = document.querySelector("#idFormGroupUser");
 // name => input
 const formularyValidation = (e) => {
   //console.log(e.target.name);
   if (e.target.name === "idInputText") {
     console.log("idInput");
-    if (expressions.idInputText.test(e.target.value)) {
-      document
-        .getElementById("idFormGroupUser")
-        .classList.remove("form__group--incorrect");
-      document
-        .getElementById("idFormGroupUser")
-        .classList.add("form__group--correct");
-
-      document
-        .querySelector("#idFormGroupUser i")
-        .classList.remove(`fa-circle-xmark`);
-      document
-        .querySelector("#idFormGroupUser i")
-        .classList.add(`fa-user-group`);
-      inputError.classList.remove("form__group--incorrect-active");
-    } else {
-      document
-        .getElementById("idFormGroupUser")
-        .classList.add("form__group--incorrect");
-      document
-        .getElementById("idFormGroupUser")
-        .classList.remove("form__group--correct");
-
-      document
-        .querySelector("#idFormGroupUser i")
-        .classList.remove(`fa-user-group`);
-      document
-        .querySelector("#idFormGroupUser i")
-        .classList.add(`fa-circle-xmark`);
-      inputError.classList.add("form__group--incorrect-active");
-    }
+    validationCamp(expressions.idInputText, e.target, `idInputText`);
     return;
   }
   if (e.target.name === "name") {
@@ -123,7 +94,29 @@ const formularyValidation = (e) => {
 
   console.log("Not Access");
 };
+// == idFormGroupUser / idFormGroupUser i
+//** === Function Validation */
+const validationCamp = (expression, input, camp) => {
+  if (expression.test(input.value)) {
+    document
+      .getElementById(`${camp}`)
+      .classList.remove("form__group--incorrect");
+    document.getElementById(`${camp}`).classList.add("form__group--correct");
 
+    document.querySelector(`${camp} i`).classList.remove(`fa-circle-xmark`);
+    document.querySelector(` ${camp} i`).classList.add(`fa-user-group`);
+    inputError.classList.remove("form__group--incorrect-active");
+  } else {
+    document.getElementById(`${camp}`).classList.add("form__group--incorrect");
+    document.getElementById(`${camp}`).classList.remove("form__group--correct");
+
+    document.querySelector(`${camp} i`).classList.remove(`fa-user-group`);
+    document.querySelector(`${camp} i`).classList.add(`fa-circle-xmark`);
+    inputError.classList.add("form__group--incorrect-active");
+  }
+};
+
+//** === Call Input */
 inputs.forEach((input) => {
   input.addEventListener("keyup", formularyValidation);
   input.addEventListener("blur", formularyValidation);
