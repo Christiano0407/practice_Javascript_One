@@ -83,6 +83,24 @@ function eventClick(event) {
 // name => input
 const formularyValidation = (e) => {
   //console.log(e.target.name);
+  if (e.target.name === "idInputText") {
+    console.log("idInput");
+    return
+  }
+  if (e.target.name === "name") {
+    console.log("Name");
+    return
+  }
+  if (e.target.name === "discount") {
+    console.log("Discount");
+    return
+  }
+  if (e.target.name === "password") {
+    console.log("Password");
+    return
+  }
+
+  console.log("Not Access")
 };
 
 inputs.forEach((input) => {
