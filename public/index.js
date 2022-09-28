@@ -100,19 +100,20 @@ const validationCamp = (expression, input, camp) => {
   if (expression.test(input.value)) {
     document
       .getElementById(`${camp}`)
-      .classList.remove("form__group--incorrect");
-    document.getElementById(`${camp}`).classList.add("form__group--correct");
-
-    document.querySelector(`${camp} i`).classList.remove(`fa-circle-xmark`);
-    document.querySelector(` ${camp} i`).classList.add(`fa-user-group`);
-    inputError.classList.remove("form__group--incorrect-active");
+      .classList.remove(`form__group--incorrect`);
+    document.getElementById(`${camp}`).classList.add(`form__group--correct`);
+    document.querySelector(`${camp}, i`).classList.remove(`fa-circle-xmark`);
+    document.querySelector(` ${camp}, i`).classList.add(`fa-user-group`);
+    inputError.classList.remove(`form__group--incorrect-active`);
+    camps[camp] = true;
   } else {
-    document.getElementById(`${camp}`).classList.add("form__group--incorrect");
-    document.getElementById(`${camp}`).classList.remove("form__group--correct");
+    document.getElementById(`${camp}`).classList.add(`form__group--incorrect`);
+    document.getElementById(`${camp}`).classList.remove(`form__group--correct`);
 
-    document.querySelector(`${camp} i`).classList.remove(`fa-user-group`);
-    document.querySelector(`${camp} i`).classList.add(`fa-circle-xmark`);
-    inputError.classList.add("form__group--incorrect-active");
+    document.querySelector(`${camp}, i`).classList.remove(`fa-user-group`);
+    document.querySelector(`${camp}, i`).classList.add(`fa-circle-xmark`);
+    inputError.classList.add(`form__group--incorrect-active`);
+    camps[camp] = false;
   }
 };
 
