@@ -32,7 +32,7 @@ image.height = 200;
 image.classList.add("img-DOM");
 image.alt = "imgNew";
 figureCaption.textContent = "Image App New";
-title.innerHTML = "User: Enter & confirm";
+title.innerHTML = "Enter & confirm";
 textOne.textContent = "APP Images";
 textError.textContent = "Have 8 or 16 Characters of the User";
 textErrorPassword.textContent =
@@ -79,7 +79,7 @@ const formularyValidation = (e) => {
     validationCamp(expressions.idInputText, e.target, "idInputText");
     return;
   }
-  if (e.target.name === "name") {
+  if (e.target.name === "password") {
     console.log("Name");
     validationCamp(expressions.name, e.target, "name");
     return;
