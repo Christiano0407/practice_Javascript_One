@@ -67,10 +67,11 @@ errorParagraph.setAttribute(
 errorParagraph.textContent = " Error: Please fill correct your formulary";
 //const icon = document.createElement("img");
 
-errorParagraph.style.display = "none";
+/* errorParagraph.style.display = "none"; */
 
 //*Todo === Events === & Form === === === === === */
 const idFormGroupUser = document.querySelector("#idFormGroupUser");
+const icon = document.querySelector(`.validation__state`);
 // name => input
 const formularyValidation = (e) => {
   //console.log(e.target.name);
@@ -105,11 +106,12 @@ const validationCamp = (expression, input, camp) => {
     document
       .getElementById(`${camp}`)
       .classList.remove("form__group--incorrect");
-    document.getElementById(`${camp}`).classList.add("form__group--correct");
+    document.getElementById(`${camp}`).classList.add(`form__group--correct`);
 
     document.querySelector(`${camp}, i`).classList.remove("fa-circle-xmark");
     document.querySelector(` ${camp}, i`).classList.add("fa-user-group");
     inputError.classList.remove(`form__group--incorrect-active`);
+    //inputErrorPassword.style.display = "flex";
     camps[camp] = true;
   } else {
     document.getElementById(`${camp}`).classList.add("form__group--incorrect");
@@ -129,17 +131,40 @@ inputs.forEach((input) => {
 });
 
 //** === Btn Click */
+/* function clickForm() {
+  formulary.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (camps.idInputText && camps.name && camps.discount && camps.password) {
+      formulary.reset();
+    } else {
+      formError.style.background = "#f66868";
+      formError.append(errorParagraph);
+    }
+  });
+} */
+
 btn.addEventListener("click", eventClick);
 
 function eventClick(event) {
   event.preventDefault();
+  const terms = document.querySelector("#terms");
+  //clickForm();
+  if (
+    camps.idInputText &&
+    camps.name &&
+    camps.discount &&
+    camps.password &&
+    terms.checked
+  ) {
+    formulary.reset();
+  }
   /* sectionOne.append(idTextInput); */
+  formError.style.background = "#f66868";
+  formError.append(errorParagraph);
   idTextInput.append(
     `${input.value}: ${inputName.value - inputDiscount.value}`
   );
-  formError.style.background = "#f66868";
-  formError.append(errorParagraph);
-  inputErrorPassword.style.display = "flex";
 }
 
 //* === Button Img === */
