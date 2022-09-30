@@ -5,11 +5,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="/logos/favicon_yard_sale.svg" type="image/x-icon" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shopMediaQueries.css">
+    <link rel="stylesheet" href="./styleShop.css">
+    <title>YardSale || Site E-commerce Online Web Shop </title>
 </head>
 
 <body>
+    <nav class="nav" id="idNav">
+        <!-- === Menu === -->
+        <img src="../icons/icon_menu.svg" alt="menu" class="menu" id="idMenuBurger">
+        <!-- ===  === Mobile Menu === === -->
+        <div class="mobile-menu inactive" id="idMobileMenu">
+            <ul>
+                <li>
+                    <a href="/">CATEGORIES</a>
+                </li>
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Other</a>
+                </li>
+            </ul>
 
+            <ul>
+                <li>
+                    <a href="/">My orders</a>
+                </li>
+                <li>
+                    <a href="/">My account</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="/" class="email">platzi@example.com</a>
+                </li>
+                <li>
+                    <a href="/" class="sign-out">Sign out</a>
+                </li>
+            </ul>
+        </div>
+        <!-- === NavBar Left === -->
+        <div class="navbar-left" id="idNavLeft">
+            <img src="../logos/logo_yard_sale.svg" alt="logo" class="logo">
+
+            <ul class="navbar__list--left">
+                <li>
+                    <a href="/">All</a>
+                </li>
+                <li>
+                    <a href="/">Clothes</a>
+                </li>
+                <li>
+                    <a href="/">Electronics</a>
+                </li>
+                <li>
+                    <a href="/">Furnitures</a>
+                </li>
+                <li>
+                    <a href="/">Toys</a>
+                </li>
+                <li>
+                    <a href="/">Others</a>
+                </li>
+            </ul>
+        </div>
+        <!-- === NavBar Right === -->
+        <div class="navbar-right" id="idNavRight">
+            <ul class="navbar__list--right">
+                <li class="navbar-email" id="idNavEmail">platzi@example.com</li>
+                <li class="navbar-user" id="isNavUser">
+                    <figure><img src="/src/img/client1.png" class="nav-user" id="idNavUser"></figure>
+                </li>
+                <li class="navbar-shopping-cart" id="idShoppingCart">
+                    <img src="../icons/icon_shopping_cart.svg" alt="shopping cart">
+                    <div>2</div>
+                </li>
+            </ul>
+        </div>
+        <!-- === Desktop Menu === -->
+        <div class="desktop-menu inactive" id="idDesktopMenu">
+            <ul class="desktop__menu">
+                <li>
+                    <a href="/" class="title">My orders</a>
+                </li>
+
+                <li>
+                    <a href="/">My account</a>
+                </li>
+
+                <li>
+                    <a href="/">Sign out</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <script src="./appShop.js"></script>
 </body>
 
 </html>

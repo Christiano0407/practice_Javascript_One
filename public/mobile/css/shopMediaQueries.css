@@ -1,0 +1,21 @@
+ @media (max-width: 640px) {
+     #idMenu {
+         display: block;
+     }
+
+     #idNavLeft ul {
+         display: none;
+     }
+
+     #idNavEmail {
+         display: none;
+     }
+
+     .mobile-menu {
+         /* position: absolute; */
+         outline: 2px solid hsl(0deg 0% 0%);
+         left: 0;
+         top: 6.5rem;
+         background: hsl(0deg 0% 100%);
+     }
+ }
