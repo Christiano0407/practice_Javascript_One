@@ -20,6 +20,7 @@ userIcon.addEventListener("click", toggleMenu);
 const mobileMenu = () => {
   if (menuMobile) {
     menuMobile.classList.toggle("inactive");
+    menuMobile.classList.toggle("animationSlide");
   }
 };
 burgerMenu.addEventListener("click", mobileMenu);

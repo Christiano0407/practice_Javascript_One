@@ -214,6 +214,28 @@ nav {
     background-color: var(--white);
 }
 
+/* === Animation === */
+.animationSlide {
+    animation: slideAnimation 0.3s ease-in-out;
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* === menu*/
+.closeBurger {
+    background-image: url("../src/assets/icon/icon_close.png");
+}
+
 .mobile-menu a {
     text-decoration: none;
     color: var(--black);
