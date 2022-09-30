@@ -17,5 +17,7 @@
          left: 0;
          top: 6.5rem;
          background: hsl(0deg 0% 100%);
+         border-top-right-radius: 0.5rem;
+         border-bottom-right-radius: 0.5rem;
      }
  }
