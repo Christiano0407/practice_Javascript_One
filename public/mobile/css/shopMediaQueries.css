@@ -1,25 +1,52 @@
- @media (max-width: 640px) {
-     #idMenuBurger {
-         display: block;
-     }
+/* === Mobile */
+@media (max-width: 370px) {}
 
-     #idNavLeft ul {
-         display: none;
-     }
+@media (max-width: 575px) {}
 
-     #idNavEmail {
-         display: none;
-     }
+@media (max-width: 640px) {
+    #idMenuBurger {
+        display: block;
+    }
 
-     .mobile-menu {
-         /* position: absolute; */
-         outline: 2px solid hsl(0deg 0% 0%);
-         left: 0;
-         top: 6.5rem;
-         background: hsl(0deg 0% 100%);
-         border-top-right-radius: 0.5rem;
-         border-bottom-right-radius: 0.5rem;
-         /* transform: translateX(100%);
+    #idNavLeft ul {
+        display: none;
+    }
+
+    #idNavEmail {
+        display: none;
+    }
+
+    .mobile-menu {
+        /* position: absolute; */
+        outline: 2px solid hsl(0deg 0% 0%);
+        left: 0;
+        top: 6.5rem;
+        background: hsl(0deg 0% 100%);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        /* transform: translateX(100%);
          transition: all 0.3s ease-in-out; */
-     }
- }
+    }
+}
+
+/* === Tablet === */
+@media (min-width: 641px) and (max-width: 767px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* === Tablet & Desktop === */
+@media (min-width: 767px) and (max-width: 1023px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* === Desktop === */
+@media (min-width: 1024px) {}
+
+@media (min-width: 1440px) {}
+
+/* === Screen Desktop === */
+@media (min-width: 1920px) {}
