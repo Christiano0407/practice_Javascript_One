@@ -162,6 +162,15 @@ nav {
     transform: scale(0.9);
 }
 
+/* === Scale Cart Shopping */
+.img-shopping {
+    cursor: pointer;
+}
+
+.img-shopping:active {
+    transform: scale(0.9);
+}
+
 /* === Desktop */
 .desktop-menu {
     width: 100px;
