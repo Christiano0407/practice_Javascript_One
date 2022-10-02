@@ -12,10 +12,14 @@ const productDetail = document.querySelector(`#idProductDetail`);
 //*? === BURGER mENU */
 // === > Remember ADD Overlay
 const mobileMenu = () => {
-  if (menuMobile) {
-    menuMobile.classList.toggle("inactive");
-    menuMobile.classList.toggle("animationSlide");
+  const isClosedProductShopping = productDetail.classList.contains("inactive");
+
+  if (!isClosedProductShopping) {
+    productDetail.classList.add("inactive");
   }
+
+  menuMobile.classList.toggle("inactive");
+  menuMobile.classList.toggle("animationSlide");
 };
 burgerMenu.addEventListener("click", mobileMenu);
 
