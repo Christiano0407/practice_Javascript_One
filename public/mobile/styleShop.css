@@ -5,11 +5,48 @@
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --clr-whiteOne: #f2f2f2;
+    --clr-blackOne: #333;
+    --clr-dark-grain: #042326;
+    --clr-dark-grainOne: #0A3A40;
+    /* =  Color Base =*/
+    --clr-whiteOne: #f2f2f2;
+    --clr-blackOne: #333;
+    --clr-dark-grain: #042326;
+    --clr-dark-grainOne: #0A3A40;
+    /* =  Palette Color =  */
+    --clr-primary: #F20587;
+    --clr-secondary: #1C17A6;
+    --clr-complementary: #F2E529;
+    --clr-light-p: #F25ECB;
+    --clr-light-s: #3029F2;
+    --clr-extra: #A6586D;
+    /* = size Font = */
+    --font-size-title: 4rem;
+    --font-size-titleTwo: 2.4rem;
+    --font-size-titleThree: 1.8rem;
+    --font-size-text: 1.6rem;
+    --font-size-paragraph: 1.4rem;
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    /* = Margin = */
+    --margin: 0rem auto;
+    --margin-one: 2rem auto;
+    --margin-space: 1rem;
+    --margin-top: 2rem;
+    --margin-bottom: 2rem;
+    /* = letter Spacing = */
+    --letter-spacing: .1rem;
+    /* == Padding == */
+    --padding: 1rem;
+    --padding-one: 1rem 3rem;
+    /* == Img == */
+    --object-fit: cover;
+    --object-fit-contain: contain;
 }
 
+/* === General CSS  === */
 *,
 *::before,
 *::after {
