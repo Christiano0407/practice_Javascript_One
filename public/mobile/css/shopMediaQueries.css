@@ -33,6 +33,20 @@
         /* width: 100%; */
         width: 90%;
     }
+
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+        margin: 2rem auto;
+    }
+
+    .product-card {
+        width: 140px;
+    }
+
+    .product-card img {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 /* === Tablet === */
