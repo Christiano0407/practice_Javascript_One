@@ -74,31 +74,45 @@ productList.push({
     "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
 });
 
-for (product of productList) {
-  const productCard = document.createElement("div");
-  productCard.classList.add("product-card");
+productList.push({
+  name: "Skateboard",
+  price: 150.99,
+  image:
+    "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
 
-  const imgCard = document.createElement("img");
-  imgCard.setAttribute("src", product.image);
-  imgCard.setAttribute("alt", "Image-Card");
+const renderProduct = (arr) => {
+  for (product of productList) {
+    const productCard = document.createElement("div");
+    productCard.classList.add("product-card");
 
-  productCard.appendChild(imgCard);
+    const imgCard = document.createElement("img");
+    imgCard.setAttribute("src", product.image);
+    imgCard.setAttribute("alt", "Image-Card");
 
-  const productInfo = document.createElement("div");
-  productInfo.classList.add("product-info");
-  const productInfoDiv = document.createElement("div");
-  const textProduct = document.createElement("p");
-  textProduct.innerText = product.name;
-  const priceProduct = document.createElement("p");
-  priceProduct.innerText = `$` + product.price;
+    const productInfo = document.createElement("div");
+    productInfo.classList.add("product-info");
+    const productInfoDiv = document.createElement("div");
+    const textProduct = document.createElement("p");
+    textProduct.innerText = product.name;
+    const priceProduct = document.createElement("p");
+    priceProduct.innerText = `$` + product.price;
 
-  const figureImage = document.createElement("figure");
-  const shopImg = document.createElement("img");
-  shopImg.setAttribute("src", "../src/assets/icon/bt_add_to_cart.svg");
+    const figureImage = document.createElement("figure");
+    const shopImg = document.createElement("img");
+    shopImg.setAttribute("src", "../src/assets/icon/bt_add_to_cart.svg");
 
-  productInfo.append(productInfoDiv, figureImage);
-  productInfoDiv.append(textProduct, priceProduct);
-  figureImage.appendChild(shopImg);
+    productInfo.appendChild(productInfoDiv);
+    productInfo.appendChild(figureImage);
 
-  CardContainer.append(productCard);
-}
+    productInfoDiv.appendChild(textProduct);
+    productInfoDiv.appendChild(priceProduct);
+
+    figureImage.appendChild(shopImg);
+
+    productCard.append(imgCard, productInfo);
+
+    CardContainer.appendChild(productCard);
+  }
+};
+renderProduct(productList);
