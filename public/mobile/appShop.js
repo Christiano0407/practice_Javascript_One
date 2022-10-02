@@ -50,3 +50,5 @@ const onShopping = () => {
 };
 
 shoppingCart.addEventListener("click", onShopping);
+
+//*! === Create Card Product === */
