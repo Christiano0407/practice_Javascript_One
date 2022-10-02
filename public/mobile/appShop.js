@@ -9,6 +9,7 @@ const menuMobile = document.querySelector("#idMobileMenu");
 //desktop.classList.add("visible");
 //desktop.classList.add("active");
 //if (desktopMenu.classList.contains("inactive")) {}
+//*? === SLIDE MENU */
 const toggleMenu = () => {
   if (desktopMenu) {
     desktopMenu.classList.toggle(`inactive`);
@@ -16,7 +17,7 @@ const toggleMenu = () => {
 };
 
 userIcon.addEventListener("click", toggleMenu);
-
+//*? === BURGER mENU */
 const mobileMenu = () => {
   if (menuMobile) {
     menuMobile.classList.toggle("inactive");
