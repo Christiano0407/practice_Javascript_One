@@ -9,7 +9,7 @@ const productDetail = document.querySelector(`#idProductDetail`);
 
 //** === === === === === Execute Code ===  === === === === */
 
-//*? === BURGER mENU */
+//*! === BURGER mENU */
 // === > Remember ADD Overlay
 const mobileMenu = () => {
   const isClosedProductShopping = productDetail.classList.contains("inactive");
@@ -23,7 +23,7 @@ const mobileMenu = () => {
 };
 burgerMenu.addEventListener("click", mobileMenu);
 
-//*? === Desktop MENU */
+//*! === Desktop MENU */
 const toggleMenu = () => {
   const isProductDetailClosed = productDetail.classList.contains("inactive");
 
@@ -33,7 +33,7 @@ const toggleMenu = () => {
   desktopMenu.classList.toggle(`inactive`);
 };
 userIcon.addEventListener("click", toggleMenu);
-//*? === Product Detail ===  */
+//*! === Product Detail ===  */
 const onShopping = () => {
   const isMobileMenuClosed = menuMobile.classList.contains("inactive");
   const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
