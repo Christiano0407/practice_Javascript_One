@@ -24,9 +24,12 @@ burgerMenu.addEventListener("click", mobileMenu);
 //desktop.classList.add("active");
 //if (desktopMenu.classList.contains("inactive")) {}
 const toggleMenu = () => {
-  if (desktopMenu) {
-    desktopMenu.classList.toggle(`inactive`);
+  const isProductDetailClosed = productDetail.classList.contains("inactive");
+
+  if (!isProductDetailClosed) {
+    productDetail.classList.add("inactive");
   }
+  desktopMenu.classList.toggle(`inactive`);
 };
 userIcon.addEventListener("click", toggleMenu);
 //*? === Product Detail ===  */
