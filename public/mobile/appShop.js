@@ -24,9 +24,6 @@ const mobileMenu = () => {
 burgerMenu.addEventListener("click", mobileMenu);
 
 //*? === Desktop MENU */
-//desktop.classList.add("visible");
-//desktop.classList.add("active");
-//if (desktopMenu.classList.contains("inactive")) {}
 const toggleMenu = () => {
   const isProductDetailClosed = productDetail.classList.contains("inactive");
 
@@ -37,7 +34,6 @@ const toggleMenu = () => {
 };
 userIcon.addEventListener("click", toggleMenu);
 //*? === Product Detail ===  */
-// productDetail.classList.contains("inactive")
 const onShopping = () => {
   const isMobileMenuClosed = menuMobile.classList.contains("inactive");
   const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
