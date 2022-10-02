@@ -8,17 +8,7 @@ const shoppingCart = document.querySelector(`#idShoppingCart`);
 const productDetail = document.querySelector(`#idProductDetail`);
 
 //** === === === === === Execute Code ===  === === === === */
-//desktop.classList.add("visible");
-//desktop.classList.add("active");
-//if (desktopMenu.classList.contains("inactive")) {}
-//*? === SLIDE MENU */
-const toggleMenu = () => {
-  if (desktopMenu) {
-    desktopMenu.classList.toggle(`inactive`);
-  }
-};
 
-userIcon.addEventListener("click", toggleMenu);
 //*? === BURGER mENU */
 // === > Remember ADD Overlay
 const mobileMenu = () => {
@@ -29,6 +19,16 @@ const mobileMenu = () => {
 };
 burgerMenu.addEventListener("click", mobileMenu);
 
+//*? === Desktop MENU */
+//desktop.classList.add("visible");
+//desktop.classList.add("active");
+//if (desktopMenu.classList.contains("inactive")) {}
+const toggleMenu = () => {
+  if (desktopMenu) {
+    desktopMenu.classList.toggle(`inactive`);
+  }
+};
+userIcon.addEventListener("click", toggleMenu);
 //*? === Product Detail ===  */
 // productDetail.classList.contains("inactive"
 const onShopping = () => {
