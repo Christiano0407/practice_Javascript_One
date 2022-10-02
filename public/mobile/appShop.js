@@ -30,11 +30,20 @@ const toggleMenu = () => {
 };
 userIcon.addEventListener("click", toggleMenu);
 //*? === Product Detail ===  */
-// productDetail.classList.contains("inactive"
+// productDetail.classList.contains("inactive")
 const onShopping = () => {
-  if (productDetail) {
-    productDetail.classList.toggle("inactive");
+  const isMobileMenuClosed = menuMobile.classList.contains("inactive");
+  const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
+
+  if (!isMobileMenuClosed) {
+    menuMobile.classList.add("inactive");
   }
+
+  if (!isDesktopMenuClosed) {
+    desktopMenu.classList.add("inactive");
+  }
+
+  productDetail.classList.toggle("inactive");
 };
 
 shoppingCart.addEventListener("click", onShopping);
