@@ -20,6 +20,7 @@ const toggleMenu = () => {
 
 userIcon.addEventListener("click", toggleMenu);
 //*? === BURGER mENU */
+// === > Remember ADD Overlay
 const mobileMenu = () => {
   if (menuMobile) {
     menuMobile.classList.toggle("inactive");
