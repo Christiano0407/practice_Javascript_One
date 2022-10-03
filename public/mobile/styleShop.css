@@ -491,15 +491,15 @@ nav {
 /* ===  Remember Add Overlay / Modal === */
 .products-detail-closed {
     /* background: var(--white); */
+    background-color: #333;
     width: 14px;
     height: 14px;
     position: absolute;
     top: 24px;
     left: 24px;
     z-index: 2;
-    padding: 1.5rem;
+    padding: 1.4rem;
     border-radius: 50%;
-    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;

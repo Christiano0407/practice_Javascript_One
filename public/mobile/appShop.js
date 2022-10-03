@@ -44,6 +44,8 @@ userIcon.addEventListener("click", toggleMenu);
 const onShopping = () => {
   const isMobileMenuClosed = menuMobile.classList.contains("inactive");
   const isDesktopMenuClosed = desktopMenu.classList.contains("inactive");
+  const isUpDetailProductClosed =
+    upDetailProduct.classList.contains("inactive");
 
   if (!isMobileMenuClosed) {
     menuMobile.classList.add("inactive");
@@ -51,6 +53,10 @@ const onShopping = () => {
 
   if (!isDesktopMenuClosed) {
     desktopMenu.classList.add("inactive");
+  }
+
+  if (!isUpDetailProductClosed) {
+    upDetailProduct.classList.add("inactive");
   }
 
   productDetail.classList.toggle("inactive");
@@ -119,9 +125,12 @@ productList.push({
 //*! === Product Detail */
 const upProductDetail = () => {
   console.log("ON!");
-
+  const isProductDetailClosed = productDetail.classList.contains("inactive");
   upDetailProduct.classList.remove("inactive");
   /*  upDetailProduct.classList.toggle("inactive"); */
+  if (!isProductDetailClosed) {
+    productDetail.classList.add("inactive");
+  }
 };
 //*! Closed Btn Detail Product */
 const closedProductDetail = () => {
