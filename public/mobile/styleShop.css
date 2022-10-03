@@ -411,13 +411,17 @@ nav {
 }
 
 /* === Products Shopping Cart */
+.main-container {
+    margin: 2rem auto;
+}
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     /* gap: 26px; */
     gap: 2rem;
     place-content: center;
-    margin: 2rem auto;
+    /* margin: 2rem auto; */
 }
 
 .product-card {
