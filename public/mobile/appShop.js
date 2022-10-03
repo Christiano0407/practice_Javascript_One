@@ -81,6 +81,20 @@ productList.push({
     "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 
+productList.push({
+  name: "Skydiving",
+  price: 50.0,
+  image:
+    "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+
+productList.push({
+  name: "Ice Skates",
+  price: 350.0,
+  image:
+    "https://images.unsplash.com/photo-1638720495078-facd4bd6625f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+
 const renderProduct = (arr) => {
   for (product of productList) {
     const productCard = document.createElement("div");
