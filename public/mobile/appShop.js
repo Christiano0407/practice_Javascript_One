@@ -7,7 +7,8 @@ const menuMobile = document.querySelector("#idMobileMenu");
 const shoppingCart = document.querySelector(`#idShoppingCart`);
 const productDetail = document.querySelector(`#idProductDetail`);
 const CardContainer = document.querySelector("#idCardsContainer");
-const upDetailProduct = document.querySelector("#idProductDetail");
+const upDetailProduct = document.querySelector("#idDetailProducts");
+const closedProduct = document.querySelector("#idProductClosed");
 
 //** === === === === === Execute Code ===  === === === === */
 
@@ -15,9 +16,13 @@ const upDetailProduct = document.querySelector("#idProductDetail");
 // === > Remember ADD Overlay
 const mobileMenu = () => {
   const isClosedProductShopping = productDetail.classList.contains("inactive");
+  const isUpDetailProduct = upDetailProduct.classList.contains("inactive");
 
   if (!isClosedProductShopping) {
     productDetail.classList.add("inactive");
+  }
+  if (!isUpDetailProduct) {
+    upDetailProduct.classList.add("inactive");
   }
 
   menuMobile.classList.toggle("inactive");
@@ -111,32 +116,19 @@ productList.push({
     "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 
-const upProductDetail = (arr) => {
+//*! === Product Detail */
+const upProductDetail = () => {
   console.log("ON!");
+
   upDetailProduct.classList.remove("inactive");
-  let detailCard = " ";
-  productList.forEach((detail) => {
-    detailCard = ` 
-    <div class="products-detail-closed" id="idProductClosed" >
-      <img src="../src/assets/icon/icon_close.png" alt="close">
-    </div>
-      <img class="img-detail" src= ${detail.image}
-          alt="bike">
-    <div class="products-infos">
-      <p>${detail.price}</p>
-      <p>${detail.name}</p>
-      <p>With its practical position, this bike also fulfills a decorative function, add your hall or
-          workspace.
-      </p>
-      <button class="primary-button add-to-cart-button">
-          <img src="../src/assets/icon/bt_add_to_cart.svg" alt="add to cart">
-          Add to cart
-      </button>
-    </div>
-    `;
-    upDetailProduct.innerHTML = detailCard;
-  });
+  /*  upDetailProduct.classList.toggle("inactive"); */
 };
+//*! Closed Btn Detail Product */
+const closedProductDetail = () => {
+  upDetailProduct.classList.add("inactive");
+};
+
+closedProduct.addEventListener("click", closedProductDetail);
 
 const renderProduct = (arr) => {
   for (product of productList) {

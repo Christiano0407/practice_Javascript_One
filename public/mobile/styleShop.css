@@ -497,7 +497,7 @@ nav {
     top: 24px;
     left: 24px;
     z-index: 2;
-    padding: 12px;
+    padding: 1.5rem;
     border-radius: 50%;
     background-color: #333;
     display: flex;
@@ -507,6 +507,10 @@ nav {
 
 .products-detail-closed:hover {
     cursor: pointer;
+}
+
+.products-detail-closed:active {
+    transform: scale(0.9);
 }
 
 /* .products-details>img:nth-child(2) {
