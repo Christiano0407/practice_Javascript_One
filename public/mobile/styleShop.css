@@ -435,6 +435,10 @@ nav {
     object-fit: cover;
 }
 
+.product-card:active {
+    transform: scale(0.9)
+}
+
 .product-info {
     display: flex;
     justify-content: space-between;

@@ -111,12 +111,12 @@ productList.push({
     "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 
-const upProductDetail = () => {
+const upProductDetail = (arr) => {
   console.log("ON!");
   upDetailProduct.classList.remove("inactive");
-
-  for (detail of productList) {
-    const detailCard = ` 
+  let detailCard = " ";
+  productList.forEach((detail) => {
+    detailCard = ` 
     <div class="products-detail-closed">
       <img src="../src/assets/icon/icon_close.png" alt="close">
     </div>
@@ -135,7 +135,7 @@ const upProductDetail = () => {
     </div>
     `;
     upDetailProduct.innerHTML = detailCard;
-  }
+  });
 };
 
 const renderProduct = (arr) => {
