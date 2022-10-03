@@ -7,6 +7,7 @@ const menuMobile = document.querySelector("#idMobileMenu");
 const shoppingCart = document.querySelector(`#idShoppingCart`);
 const productDetail = document.querySelector(`#idProductDetail`);
 const CardContainer = document.querySelector("#idCardsContainer");
+const upDetailProduct = document.querySelector("#idProductDetail");
 
 //** === === === === === Execute Code ===  === === === === */
 
@@ -73,7 +74,36 @@ productList.push({
   image:
     "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
 });
-
+productList.push({
+  name: "Skateboard",
+  price: 150.99,
+  image:
+    "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+productList.push({
+  name: "Skydiving",
+  price: 50.0,
+  image:
+    "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+productList.push({
+  name: "Ice Skates",
+  price: 350.0,
+  image:
+    "https://images.unsplash.com/photo-1638720495078-facd4bd6625f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+productList.push({
+  name: "Bike",
+  price: 120.0,
+  image:
+    "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+});
+productList.push({
+  name: "Skates",
+  price: 99.99,
+  image:
+    "https://images.unsplash.com/photo-1596706696066-99a44cc64e0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1408&q=80",
+});
 productList.push({
   name: "Skateboard",
   price: 150.99,
@@ -81,19 +111,32 @@ productList.push({
     "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 
-productList.push({
-  name: "Skydiving",
-  price: 50.0,
-  image:
-    "https://images.unsplash.com/photo-1630879937467-4afa290b1a6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-});
+const upProductDetail = () => {
+  console.log("ON!");
+  upDetailProduct.classList.remove("inactive");
 
-productList.push({
-  name: "Ice Skates",
-  price: 350.0,
-  image:
-    "https://images.unsplash.com/photo-1638720495078-facd4bd6625f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-});
+  for (detail of productList) {
+    const detailCard = ` 
+    <div class="products-detail-closed">
+      <img src="../src/assets/icon/icon_close.png" alt="close">
+    </div>
+      <img class="img-detail" src= ${detail.image}
+          alt="bike">
+    <div class="products-infos">
+      <p>${detail.price}</p>
+      <p>${detail.name}</p>
+      <p>With its practical position, this bike also fulfills a decorative function, add your hall or
+          workspace.
+      </p>
+      <button class="primary-button add-to-cart-button">
+          <img src="../src/assets/icon/bt_add_to_cart.svg" alt="add to cart">
+          Add to cart
+      </button>
+    </div>
+    `;
+    upDetailProduct.innerHTML = detailCard;
+  }
+};
 
 const renderProduct = (arr) => {
   for (product of productList) {
@@ -103,6 +146,8 @@ const renderProduct = (arr) => {
     const imgCard = document.createElement("img");
     imgCard.setAttribute("src", product.image);
     imgCard.setAttribute("alt", "Image-Card");
+    imgCard.classList.add("image-product");
+    imgCard.addEventListener("click", upProductDetail);
 
     const productInfo = document.createElement("div");
     productInfo.classList.add("product-info");
