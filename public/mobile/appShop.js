@@ -117,7 +117,7 @@ const upProductDetail = (arr) => {
   let detailCard = " ";
   productList.forEach((detail) => {
     detailCard = ` 
-    <div class="products-detail-closed">
+    <div class="products-detail-closed" id="idProductClosed" >
       <img src="../src/assets/icon/icon_close.png" alt="close">
     </div>
       <img class="img-detail" src= ${detail.image}
