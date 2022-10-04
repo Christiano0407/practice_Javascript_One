@@ -105,28 +105,28 @@ productList.push({
     "https://images.unsplash.com/photo-1638720495078-facd4bd6625f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 productList.push({
-  name: "Bike",
-  price: 120.0,
+  name: "Motorcycle Winter",
+  price: 500.0,
   image:
-    "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "https://images.unsplash.com/photo-1548978023-78e9b6b082fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80",
 });
 productList.push({
-  name: "Skates",
-  price: 99.99,
+  name: "Skate One",
+  price: 125.99,
   image:
-    "https://images.unsplash.com/photo-1596706696066-99a44cc64e0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1408&q=80",
+    "https://images.unsplash.com/photo-1605798410801-e7680bf2cdc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 productList.push({
-  name: "Motorcycle",
-  price: 250.0,
+  name: "Surf Table",
+  price: 299.99,
   image:
-    "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    "https://images.unsplash.com/photo-1537519646099-335112f03225?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 productList.push({
-  name: "Skateboard",
-  price: 150.99,
+  name: "Sports boat",
+  price: 550.999,
   image:
-    "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "https://images.unsplash.com/photo-1534296264129-b318f8140c27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
 });
 
 //*! === Product Detail */
