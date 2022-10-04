@@ -9,6 +9,7 @@ const productDetail = document.querySelector(`#idProductDetail`);
 const CardContainer = document.querySelector("#idCardsContainer");
 const upDetailProduct = document.querySelector("#idDetailProducts");
 const closedProduct = document.querySelector("#idProductClosed");
+const overlay = document.querySelector("#idOverlay");
 
 //** === === === === === Execute Code ===  === === === === */
 
@@ -120,6 +121,8 @@ const openProductDetail = () => {
   const isProductDetailClosed = productDetail.classList.contains("inactive");
   upDetailProduct.classList.remove("inactive");
   /*  upDetailProduct.classList.toggle("inactive"); */
+  overlay.classList.add("active");
+  upDetailProduct.classList.add("active");
   if (!isProductDetailClosed) {
     productDetail.classList.add("inactive");
   }
@@ -127,6 +130,8 @@ const openProductDetail = () => {
 //*! Closed Btn Detail Product */
 const closedProductDetail = () => {
   upDetailProduct.classList.add("inactive");
+  overlay.classList.remove("active");
+  upDetailProduct.classList.remove("active");
 };
 closedProduct.addEventListener("click", closedProductDetail);
 

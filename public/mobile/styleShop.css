@@ -473,19 +473,22 @@ nav {
 .products-details {
     width: 360px;
     padding-bottom: 24px;
-    position: absolute;
-    right: 0;
     box-shadow: 1px 2px 15px #333;
     padding: 0.5rem;
     background-color: hsl(0deg 0% 100%);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
     position: absolute;
-    top: 6.1rem;
-    right: 2.4rem;
-    /*  position: fixed; */
-    /* z-index: 10; */
+    position: fixed;
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+.products-details.active {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* ===  Remember Add Overlay / Modal === */
@@ -527,7 +530,7 @@ nav {
 }
 
 .products-infos {
-    margin: 24px 24px 0 24px;
+    margin: 24px 24px 24px 24px;
 }
 
 .products-infos p:nth-child(1) {
@@ -567,4 +570,22 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* === Modal === */
+#idOverlay {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: 200ms ease-in-out;
+}
+
+#idOverlay.active {
+    opacity: 1;
+    pointer-events: all;
 }
