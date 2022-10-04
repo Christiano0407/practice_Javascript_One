@@ -116,6 +116,19 @@ productList.push({
   image:
     "https://images.unsplash.com/photo-1596706696066-99a44cc64e0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1408&q=80",
 });
+productList.push({
+  name: "Motorcycle",
+  price: 250.0,
+  image:
+    "https://images.unsplash.com/photo-1558981285-6f0c94958bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+});
+productList.push({
+  name: "Skateboard",
+  price: 150.99,
+  image:
+    "https://images.unsplash.com/photo-1602519392653-94913ff0005a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+});
+
 //*! === Product Detail */
 const openProductDetail = () => {
   const isProductDetailClosed = productDetail.classList.contains("inactive");

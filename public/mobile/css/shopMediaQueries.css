@@ -77,6 +77,13 @@
     }
 }
 
+@media (min-width: 768px) {
+    #idDetailProducts {
+        top: 50%;
+        right: 5%;
+    }
+}
+
 /* === Tablet & Desktop === */
 @media (min-width: 767px) and (max-width: 1023px) {
     .mobile-menu {
@@ -85,15 +92,14 @@
 
     #idDetailProducts {
         top: 50%;
-        right: 15%;
+        right: 5%;
     }
 }
 
 /* === Desktop === */
 @media (min-width: 1024px) {
     #idDetailProducts {
-        top: 50%;
-        right: 15%;
+        right: 17.5%;
     }
 }
 
