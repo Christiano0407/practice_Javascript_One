@@ -515,6 +515,24 @@ informationPeople(people);
 
 - [Platzi_Test](https://github.com/platzi/curso-js-practico/tree/variables);
 
+## Proyect
+
+> Mobile
+
+![Mobile](/public/src/assets/readmeImg/mobile1.png)
+
+![Mobile](/public/src/assets/readmeImg/mobile02.png)
+
+![Mobile](/public/src/assets/readmeImg/mobileCart.png)
+
+![Mobile](/public/src/assets/readmeImg/mobileMenu.png)
+
+![Mobile](/public/src/assets/readmeImg/mobileLayout1.png)
+
+> Screen
+
+![Screen](/public/src/assets/readmeImg/screen.png)
+
 ## MIT LICENSE
 
 MIT License
