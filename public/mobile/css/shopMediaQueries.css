@@ -63,6 +63,29 @@
         top: 50%;
         left: 50%;
     }
+
+    #idFooter {
+        position: fixed;
+        height: 15rem;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__line {
+        border: 1px solid hsl(0deg 0% 100%);
+        margin: .5rem auto;
+    }
+
+    .footer__copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright__text {
+        font-size: 1.2rem;
+    }
 }
 
 /* === Tablet === */
@@ -75,6 +98,31 @@
         top: 50%;
         right: 0%;
     }
+
+    #idFooter {
+        height: 25rem;
+    }
+
+    #idFooter {
+        height: 35rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__line {
+        border: 2px solid hsl(0deg 0% 100%);
+    }
+
+    .footer__copyright {
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .copyright__text {
+        font-size: 1.4rem;
+    }
 }
 
 /* === Tablet*/
@@ -82,6 +130,27 @@
     #idDetailProducts {
         top: 50%;
         right: 5%;
+    }
+
+    #idFooter {
+        height: 35rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footer__line {
+        border: 2px solid hsl(0deg 0% 100%);
+    }
+
+    .footer__copyright {
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .copyright__text {
+        font-size: 1.4rem;
     }
 }
 

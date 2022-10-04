@@ -589,3 +589,40 @@ nav {
     opacity: 1;
     pointer-events: all;
 }
+
+/* === Footer === */
+.footer {
+    /*  position: fixed; */
+    background-color: var(--hospital-green);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.footer__logo {
+    margin: 2rem auto;
+    padding: .5rem;
+}
+
+.footer__logo .footer__logo--figure {
+    width: 25rem;
+}
+
+.footer__logo--figure .figure-img {
+    width: 100%;
+}
+
+.footer__line {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.footer__copyright {
+    width: 100%;
+    padding: .5rem;
+}
+
+.copyright__text {
+    font-weight: 500;
+}
